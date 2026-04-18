@@ -282,24 +282,24 @@ const agenda: Record<string, {date: string;sessions: Session[];}> = {
     {
       time: '10:30 AM – 11:30 AM',
       type: 'event',
-      title: 'Inauguration & Welcome Address by Sunny Leone',
-      description: "The official opening of CMPL Expo 2026 — Asia's largest Contract Manufacturing & Private Label platform. Join us for a landmark inauguration ceremony featuring celebrity entrepreneur Sunny Leone as the chief guest.",
+      title: 'Inauguration and Keynote',
+      description: "The official opening of CMPL Expo 2026 — Asia's largest Contract Manufacturing & Private Label platform. Join us for a landmark inauguration ceremony.",
       highlight: true,
       speakerDetails: [speakerPhotos['Sunny Leone']]
     },
     {
       time: '12:00 PM – 1:00 PM',
       type: 'session',
-      track: "Women Entrepreneurs' Panel",
+      track: "Women Founders Panel Discussion",
       title: 'Owning the Narrative: Building Brands, Becoming the Brand',
       description: 'Attention can launch a brand. Authority builds an enterprise. This session examines how founders turn visibility into a scalable business — whether they started with an audience or built one along the way.',
       speakerDetails: [speakerPhotos['Sunny Leone'], speakerPhotos['Naiyya Saggi'], speakerPhotos['Swati Mehra']]
     },
     {
-      time: '12:00 PM – 2:00 PM',
+      time: '12:30 PM – 2:30 PM',
       type: 'workshop',
-      track: 'Paid Workshop',
-      title: 'Banawat Formula X Edition 2 — Building the Next Generation Indian BPC Product',
+      track: 'BPC Workshop',
+      title: 'Banawat — BPC Workshop',
       description: 'A hands-on masterclass for founders and formulators building the next generation of Indian Beauty & Personal Care products. Explore cutting-edge formulation strategies, ingredient innovation, and manufacturing partnerships.',
       speakerDetails: [speakerPhotos['Sarvangi Shah'], speakerPhotos['Dr. Mohit Lalvani']]
     },
@@ -307,15 +307,9 @@ const agenda: Record<string, {date: string;sessions: Session[];}> = {
       time: '1:15 PM – 2:00 PM',
       type: 'session',
       track: 'Trend Talk Masterclass',
-      title: "The Real Reason Your Brand Isn't Scaling — And How to Fix It",
-      description: 'A masterclass for founders, operators, and brand builders who are moving fast and want to scale right. Vivek Chadha (Author of Startupology) breaks down the hidden blockers preventing FMCG brands from achieving their next growth milestone.',
+      title: 'Trend Talk Masterclass',
+      description: 'A masterclass for founders, operators, and brand builders who are moving fast and want to scale right.',
       speakerDetails: [speakerPhotos['Vivek Chadha']]
-    },
-    {
-      time: '2:00 PM – 2:30 PM',
-      type: 'break',
-      title: 'Lunch',
-      description: 'Networking lunch break.'
     },
     {
       time: '2:45 PM – 3:30 PM',
@@ -331,10 +325,10 @@ const agenda: Record<string, {date: string;sessions: Session[];}> = {
       speakerPhotos['Jaspreet Singh H Gulati']]
     },
     {
-      time: '3:15 PM – 4:45 PM',
+      time: '2:45 PM – 4:15 PM',
       type: 'workshop',
-      track: 'Paid Workshop',
-      title: 'Savoré Edition 2 — Body OS Building: For the Way India Will Eat in 2026–27',
+      track: 'F&B Workshop',
+      title: 'Savore — F&B Workshop',
       description: 'A deep-dive workshop into the future of Indian food and beverage formulation. Explore emerging ingredients, consumer nutrition trends, and how to build products that resonate with the evolving Indian palate in 2026–27.',
       speakerDetails: [speakerPhotos['Ritesh Mathur'], speakerPhotos['FT Subhaprada Nishtala']]
     },
@@ -350,28 +344,13 @@ const agenda: Record<string, {date: string;sessions: Session[];}> = {
       time: '4:30 PM – 6:30 PM',
       type: 'event',
       track: 'Exclusive',
-      title: 'Food Founders Meetup — Mumbai (F&B Founders Only, in collaboration with Equinox Labs)',
-      description: 'An exclusive, invite-only gathering for F&B founders to connect, share insights, and build meaningful partnerships. Curated conversations in a relaxed setting — no pitches, just real talk between people building India\'s food future.'
-    },
-    {
-      time: '6:30 PM Onwards',
-      type: 'event',
-      title: 'CMD Disruptors Awards Night (Chief Guest: Sunny Leone)',
-      description: "The most glamorous evening at CMPL Expo — celebrating the boldest disruptors in India's consumer goods industry. An awards ceremony recognising founders, brands, and innovators who have redefined their categories.",
-      highlight: true,
-      speakerDetails: [speakerPhotos['Sunny Leone']]
+      title: 'An Exclusive Food Founders Meetup — Mumbai',
+      description: 'Exclusively for F&B founders happening in collaboration with Equinox Lab. An exclusive, invite-only gathering for F&B founders to connect, share insights, and build meaningful partnerships. Curated conversations in a relaxed setting — no pitches, just real talk between people building India\'s food future.'
     }]
   },
   'DAY 2': {
     date: 'Tuesday, 05 May 2026',
     sessions: [
-    {
-      time: '11:00 AM – 12:00 PM',
-      type: 'event',
-      track: 'Networking',
-      title: 'Networking Meet by Chamber for Advancement of Small and Medium Businesses',
-      description: 'A structured networking session connecting SME founders, manufacturers, and industry stakeholders. Build meaningful business relationships with verified buyers, suppliers, and partners in a curated environment.'
-    },
     {
       time: '11:30 AM – 12:15 PM',
       type: 'session',
@@ -389,32 +368,27 @@ const agenda: Record<string, {date: string;sessions: Session[];}> = {
     {
       time: '12:15 PM – 2:15 PM',
       type: 'workshop',
-      track: 'Paid Workshop',
-      title: 'Launchpad Scale Across Channels Edition 2 — On the Shelf. Everywhere.',
-      description: "You've built the product. Now put it on shelves the world over. This workshop covers omnichannel distribution strategy, export readiness, and how to scale your brand across modern trade, e-commerce, and international markets.",
-      speakerDetails: [speakerPhotos['Binamra Dash']]
+      track: 'Packaging Workshop',
+      title: 'Unpack — Packaging Workshop',
+      description: 'Where real FMCG packs get tested. Bring your packaging brief or existing pack and get live feedback from industry experts on shelf impact, material choices, sustainability credentials, and retail viability.',
+      speakerDetails: [speakerPhotos['Sridhar J'], speakerPhotos['Vaibhav Dixit']]
     },
     {
       time: '12:30 PM – 1:30 PM',
       type: 'session',
-      track: 'Hygiene',
-      title: "Dirty Secret: Why Hygiene Still Can't Crack the Indian Mass Market",
-      description: 'Post-COVID growth has been strong, but mass-market habit formation remains weak. Beyond price, behaviour, culture, and relevance limit adoption — even when distribution reaches the last mile. With innovation focused on urban premium consumers, the key challenge is turning one-time trials into repeat usage at scale.',
+      track: 'Investors Panel Discussion',
+      title: 'Show Me the Moat: How Serious Investors Are Reading FMCG Brands in 2026',
+      description: 'A candid panel with leading investors on what they look for in FMCG brands today — beyond revenue and growth metrics. What constitutes a real moat, how they evaluate founder-market fit, and what makes them say yes or walk away.',
       speakerDetails: [
-      speakerPhotos['Surbhi Bafna'],
-      speakerPhotos['Ketan Munoth'],
-      speakerPhotos['Udit (Alok) Birla'],
-      speakerPhotos['Kaushik Johari'],
-      speakerPhotos['Sunil Lewis']]
+      speakerPhotos['Kshitij Ladia'],
+      speakerPhotos['Ankita Balotia'],
+      speakerPhotos['Vivek Kumar'],
+      speakerPhotos['Abhiram Bhalerao'],
+      speakerPhotos['Saptarishi Sen'],
+      speakerPhotos['Ashim Jolly']]
     },
     {
-      time: '1:30 PM – 2:00 PM',
-      type: 'break',
-      title: 'Lunch',
-      description: 'Networking lunch break.'
-    },
-    {
-      time: '2:00 PM – 2:45 PM',
+      time: '1:45 PM – 2:30 PM',
       type: 'session',
       track: 'Food & Beverages',
       title: 'The Contradiction Economy: Building F&B for a Consumer Who Wants Everything',
@@ -422,7 +396,7 @@ const agenda: Record<string, {date: string;sessions: Session[];}> = {
       speakerDetails: [speakerPhotos['Ashwin Bhadri'], speakerPhotos['Kinnari Gosrani Shah']]
     },
     {
-      time: '3:00 PM – 3:45 PM',
+      time: '2:45 PM – 3:30 PM',
       type: 'session',
       track: 'Packaging',
       title: 'The Last Layer: The Push and Pull of Packaging Decisions',
@@ -434,19 +408,26 @@ const agenda: Record<string, {date: string;sessions: Session[];}> = {
       speakerPhotos['Raju Kalgutkar']]
     },
     {
-      time: '3:00 PM – 5:00 PM',
+      time: '3:00 PM – 4:30 PM',
       type: 'workshop',
-      track: 'Paid Workshop',
-      title: 'Unpack Edition 2 — Does Your Pack Make the Grade?',
-      description: 'Where real FMCG packs get tested. Bring your packaging brief or existing pack and get live feedback from industry experts on shelf impact, material choices, sustainability credentials, and retail viability.',
-      speakerDetails: [speakerPhotos['Sridhar J'], speakerPhotos['Vaibhav Dixit']]
+      track: 'Workshop',
+      title: 'Launch Pad Workshop',
+      description: "You've built the product. Now put it on shelves the world over. This workshop covers omnichannel distribution strategy, export readiness, and how to scale your brand across modern trade, e-commerce, and international markets.",
+      speakerDetails: [speakerPhotos['Binamra Dash']]
     },
     {
-      time: '4:00 PM – 4:45 PM',
+      time: '3:45 PM – 4:30 PM',
       type: 'session',
       track: 'Winning the Consumer',
-      title: 'Trust is the New CAC: Why Brands Winning in 2026 Stopped Buying Attention',
+      title: 'Trust is the New CAC — Why the Brands Winning in 2026 Stopped Buying Attention and Started Earning It',
       description: 'As CAC rises and attention becomes costlier, brands must look beyond paid growth to build sustainably. In an omnichannel world, true differentiation comes from meaningful engagement. Turning first-time buyers into loyal consumers depends on strong positioning, consistent experiences, and a sharp focus on retention.'
+    },
+    {
+      time: '5:00 PM – 6:00 PM',
+      type: 'event',
+      title: 'Mompreneur Session',
+      description: 'A dedicated session celebrating and empowering mom entrepreneurs building consumer brands. Real stories, practical insights, and community building for founders balancing family and business.',
+      highlight: true
     }]
   },
   'DAY 3': {
@@ -455,7 +436,7 @@ const agenda: Record<string, {date: string;sessions: Session[];}> = {
     {
       time: '11:00 AM – 5:00 PM',
       type: 'event',
-      title: 'PITCH DAY Edition 2 — High-potential FMCG brands pitch to an invited panel of investors',
+      title: 'PITCH DAY',
       description: 'The dedicated pitch stage where high-potential FMCG brands present to an invited panel of investors. Beyond pitching, founders can discover manufacturing, packaging and ingredient partners across CMPL to strengthen their growth journey. A full day of high-stakes presentations, investor Q&A, and deal-making.',
       highlight: true,
       speakerDetails: [

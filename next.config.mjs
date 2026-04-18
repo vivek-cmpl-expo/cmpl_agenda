@@ -21,9 +21,9 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/',
-        destination: '/cmplexpo',
-        permanent: false,
+        source: '/cmplexpo',
+        destination: '/',
+        permanent: true,
       },
     ];
   }

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: 'Join Asia\'s largest Contract Manufacturing & Private Label Expo. 500+ exhibitors, 30,000+ visitors, pre-scheduled meetings. May 4–6, 2026 at Jio World Convention Centre, Mumbai.',
   icons: {
     icon: [
-      { url: '/favicon.ico', type: 'image/x-icon' }
+      { url: '/assets/logo/favicon-32x32.png', type: 'image/png', sizes: '32x32' }
     ],
   },
 };

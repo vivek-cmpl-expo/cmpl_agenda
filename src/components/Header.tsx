@@ -18,7 +18,6 @@ export default function Header() {
   const navLinks = [
     { label: 'About', href: '#about' },
     { label: 'Agenda', href: '#agenda' },
-    { label: 'Speakers', href: '#speakers' },
     { label: 'Experiences', href: '#experiences' },
   ];
 
@@ -74,7 +73,7 @@ export default function Header() {
         <div className="max-w-[1440px] mx-auto px-6 md:px-12 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <AppLogo src="/assets/logo/Logo-m26.jpg" size={80} className="h-16 w-auto" />
+            <AppLogo src="/assets/logo/Logo-m26.jpg" size={400} className="h-20 md:h-32 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
