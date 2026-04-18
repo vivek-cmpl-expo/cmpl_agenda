@@ -18,11 +18,11 @@ const buttons = [
     external: true,
   },
   {
-    label: 'Agenda',
-    href: '#agenda',
+    label: 'Register to Visit',
+    href: 'https://cmpl.world/',
     bg: '#3A9A3A',
     hoverBg: '#2E7D2E',
-    external: false,
+    external: true,
   },
 ];
 
