@@ -541,10 +541,10 @@ const typeColors: Record<string, string> = {
 };
 
 const typeLabels: Record<string, string> = {
-  session: 'Session',
-  workshop: 'Workshop',
+  session: 'SPEAQ',
+  workshop: 'Workshop Area',
   break: 'Break',
-  event: 'Special Event',
+  event: 'Special Event Area',
 };
 
 function SessionSpeakers({ speakers }: { speakers: SpeakerInfo[] }) {
