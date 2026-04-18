@@ -8,8 +8,8 @@ const events = [
   tag: 'Investor Connect',
   description: 'The dedicated pitch stage where high-potential FMCG brands present to an invited panel of investors. Founders also discover manufacturing, packaging, and ingredient partners.',
   cta: 'Apply to Pitch',
-  img: "https://images.unsplash.com/photo-1539890303825-02af058ee696",
-  alt: 'Startup pitch presentation in dark auditorium with dramatic stage lighting and investor panel seated in background',
+  img: "https://pitchday.cmplexpo.com/assets/VIS_1381.jpg",
+  alt: 'CMPL Pitch Day group photo - startup founders and investors at Jio World Convention Centre',
   accentColor: '#B8860B',
   wide: true
 },
@@ -19,8 +19,8 @@ const events = [
   tag: '50+ Awards · Celebrity Presence',
   description: 'Recognizing innovation and excellence across FMCG. Chief Guest: Sunny Leone. An evening of celebration, recognition, and premium networking.',
   cta: 'Learn More',
-  img: "https://images.unsplash.com/photo-1673769502379-8f885645ba15",
-  alt: 'Awards ceremony stage with dramatic lighting, dark background, spotlight on stage with audience silhouettes',
+  img: "/assets/banner/distruptor.jpg",
+  alt: 'Disruptors Awards Night at CMPL Expo',
   accentColor: '#C94E4E',
   wide: false
 },
@@ -41,10 +41,10 @@ export default function SpecialEventsSection() {
   return (
     <section
       id="special-events"
-      className="relative z-10 py-24 md:py-28 border-b"
+      className="relative z-10 py-12 sm:py-24 md:py-28 border-b"
       style={{ background: '#FAFAF8', borderColor: 'rgba(184,134,11,0.12)' }}>
       
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12">
         {/* Header */}
         <div className="flex items-center gap-4 mb-6 scroll-reveal">
           <span className="section-label">05 / Special Events</span>
@@ -66,7 +66,7 @@ export default function SpecialEventsSection() {
           {/* Pitch Day — wide */}
           <div
             className="lg:col-span-2 experience-card rounded-lg overflow-hidden relative scroll-reveal"
-            style={{ minHeight: '400px', border: '1px solid rgba(184,134,11,0.2)' }}>
+            style={{ minHeight: '280px', border: '1px solid rgba(184,134,11,0.2)' }}>
             
             <AppImage
               src={events?.[0]?.img}
@@ -79,7 +79,7 @@ export default function SpecialEventsSection() {
               className="absolute inset-0"
               style={{ background: 'linear-gradient(135deg, rgba(10,8,6,0.88) 0%, rgba(10,8,6,0.55) 60%, rgba(10,8,6,0.35) 100%)' }} />
             
-            <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end z-10">
+            <div className="absolute inset-0 p-4 sm:p-8 md:p-10 flex flex-col justify-end z-10">
               <span
                 className="text-[9px] font-bold tracking-[0.25em] uppercase px-3 py-1.5 rounded-full self-start mb-4"
                 style={{ background: 'rgba(184,134,11,0.15)', color: '#D4A017', border: '1px solid rgba(184,134,11,0.35)' }}>
@@ -92,7 +92,7 @@ export default function SpecialEventsSection() {
                 {events?.[0]?.title}
               </h3>
               <p className="text-sm leading-relaxed mb-6 max-w-md" style={{ color: 'rgba(255,255,255,0.7)' }}>{events?.[0]?.description}</p>
-              <a href="#register" className="btn-gold inline-block self-start px-6 py-3 text-sm font-bold tracking-wide">
+              <a href="https://pitchday.cmplexpo.com/backend/public/apply_now" target="_blank" rel="noopener noreferrer" className="btn-gold inline-block self-start px-6 py-3 text-sm font-bold tracking-wide">
                 <span className="relative z-10">{events?.[0]?.cta}</span>
               </a>
             </div>
@@ -104,7 +104,7 @@ export default function SpecialEventsSection() {
             <div
               key={event?.title}
               className={`experience-card rounded-lg overflow-hidden relative flex-1 scroll-reveal delay-${i + 1}`}
-              style={{ minHeight: '185px', border: `1px solid ${event?.accentColor}25` }}>
+              style={{ minHeight: '150px', border: `1px solid ${event?.accentColor}25` }}>
               
                 <AppImage
                 src={event?.img}

@@ -37,10 +37,10 @@ export default function WhyAttendSection() {
   return (
     <section
       id="why-attend"
-      className="relative z-10 py-24 md:py-28 border-b"
+      className="relative z-10 py-12 sm:py-24 md:py-28 border-b"
       style={{ background: '#FAFAF8', borderColor: 'rgba(184,134,11,0.12)' }}
     >
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12">
         {/* Header */}
         <div className="flex items-center gap-4 mb-6 scroll-reveal">
           <span className="section-label">07 / Why Attend</span>

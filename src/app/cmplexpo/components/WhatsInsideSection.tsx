@@ -37,10 +37,10 @@ export default function WhatsInsideSection() {
   return (
     <section
       id="inside"
-      className="relative z-10 py-24 md:py-28 border-b"
+      className="relative z-10 py-12 sm:py-24 md:py-28 border-b"
       style={{ background: '#F5F3EE', borderColor: 'rgba(184,134,11,0.12)' }}
     >
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12">
         {/* Header */}
         <div className="flex items-center gap-4 mb-6 scroll-reveal">
           <span className="section-label">02 / What's Inside</span>
@@ -71,7 +71,7 @@ export default function WhatsInsideSection() {
           {components?.map((item, i) => (
             <div
               key={item?.title}
-              className={`spotlight-card experience-card p-8 md:p-10 flex flex-col gap-4 scroll-reveal delay-${Math.min(i + 1, 5)}`}
+              className={`spotlight-card experience-card p-4 sm:p-6 md:p-10 flex flex-col gap-4 scroll-reveal delay-${Math.min(i + 1, 5)}`}
               style={{ background: '#FFFFFF' }}
             >
               <div className="relative z-10">

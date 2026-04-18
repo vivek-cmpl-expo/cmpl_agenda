@@ -5,26 +5,30 @@ import React from 'react';
 const buttons = [
   {
     label: 'About CMPL',
-    href: '#about',
+    href: 'https://cmplexpo.com/',
     bg: '#E07020',
     hoverBg: '#C85E10',
+    external: true,
   },
   {
     label: 'Workshops',
-    href: '#inside',
+    href: 'https://workshops.cmplexpo.com/',
     bg: '#2E86C1',
     hoverBg: '#1A6FA8',
+    external: true,
   },
   {
     label: 'Agenda',
     href: '#agenda',
     bg: '#3A9A3A',
     hoverBg: '#2E7D2E',
+    external: false,
   },
 ];
 
 export default function StickyNavButtons() {
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, external: boolean) => {
+    if (external) return;
     e.preventDefault();
     const target = document.querySelector(href);
     if (target) {
@@ -38,7 +42,9 @@ export default function StickyNavButtons() {
         <a
           key={btn.label}
           href={btn.href}
-          onClick={(e) => handleClick(e, btn.href)}
+          target={btn.external ? '_blank' : undefined}
+          rel={btn.external ? 'noopener noreferrer' : undefined}
+          onClick={(e) => handleClick(e, btn.href, btn.external)}
           className="group flex items-center justify-center cursor-pointer select-none"
           style={{
             writingMode: 'vertical-rl',

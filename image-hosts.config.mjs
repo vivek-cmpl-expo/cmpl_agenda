@@ -19,4 +19,12 @@ export const imageHosts = [
         protocol: 'https',
         hostname: 'img.rocket.new',
     },
+    {
+        protocol: 'https',
+        hostname: 'workshops.cmplexpo.com',
+    },
+    {
+        protocol: 'https',
+        hostname: 'pitchday.cmplexpo.com',
+    },
 ];

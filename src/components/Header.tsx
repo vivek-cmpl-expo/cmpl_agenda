@@ -56,24 +56,24 @@ export default function Header() {
             onClick={() => setMenuOpen(false)}
             className="btn-gold inline-block px-8 py-4 text-sm font-bold tracking-wide mt-4"
           >
-            Register Now
+            Register to Visit
           </a>
         </nav>
       </div>
       {/* Main Header */}
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled ? 'py-3 border-b' : 'py-5'
+          scrolled ? 'py-1 md:py-3 border-b' : 'py-2 md:py-5'
         }`}
         style={{
           background: '#FFFFFF',
           borderColor: 'rgba(184, 134, 11, 0.15)',
         }}
       >
-        <div className="max-w-[1440px] mx-auto px-6 md:px-12 flex items-center justify-between">
+        <div className="max-w-[1440px] mx-auto px-4 md:px-12 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <AppLogo src="/assets/logo/Logo-m26.jpg" size={400} className="h-20 md:h-32 w-auto" />
+            <AppLogo src="/assets/logo/Logo-m26.jpg" size={400} className="h-10 sm:h-14 md:h-20 lg:h-32 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
@@ -95,10 +95,12 @@ export default function Header() {
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="#register"
+              href="https://cmpl.world/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-gold relative px-6 py-2.5 text-[11px] font-bold tracking-widest uppercase"
             >
-              <span className="relative z-10">Register Now</span>
+              <span className="relative z-10">Register to Visit</span>
             </a>
           </div>
 
