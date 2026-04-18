@@ -19,6 +19,7 @@ const events = [
   tag: '50+ Awards · Celebrity Presence',
   description: 'Recognizing innovation and excellence across FMCG. Chief Guest: Sunny Leone. An evening of celebration, recognition, and premium networking.',
   cta: 'Learn More',
+  link: 'https://www.cmplexpo.com/the-cmpl-disruptors-awards/',
   img: "/assets/banner/distruptor.jpg",
   alt: 'Disruptors Awards Night at CMPL Expo',
   accentColor: '#C94E4E',
@@ -30,6 +31,7 @@ const events = [
   tag: 'F&B Founders Only',
   description: 'An exclusive gathering for food & beverage founders. In collaboration with Equinox Labs and the Food Founders Ecosystem.',
   cta: 'Request Invite',
+  link: 'mailto:akanksha@cmplexpo.com',
   img: "https://img.rocket.new/generatedImages/rocket_gen_img_1c7b9853c-1772807555846.png",
   alt: 'Small group of food entrepreneurs networking around a table in a warm well-lit private dining setting',
   accentColor: '#2E7DB8',
@@ -66,7 +68,7 @@ export default function SpecialEventsSection() {
           {/* Pitch Day — wide */}
           <div
             className="lg:col-span-2 experience-card rounded-lg overflow-hidden relative scroll-reveal"
-            style={{ minHeight: '280px', border: '1px solid rgba(184,134,11,0.2)' }}>
+            style={{ minHeight: '360px', border: '1px solid rgba(184,134,11,0.2)' }}>
             
             <AppImage
               src={events?.[0]?.img}
@@ -91,7 +93,7 @@ export default function SpecialEventsSection() {
                 style={{ fontSize: 'clamp(1.8rem, 3.5vw, 3rem)', color: '#FFFFFF' }}>
                 {events?.[0]?.title}
               </h3>
-              <p className="text-sm leading-relaxed mb-6 max-w-md" style={{ color: 'rgba(255,255,255,0.7)' }}>{events?.[0]?.description}</p>
+              <p className="text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6 max-w-md" style={{ color: 'rgba(255,255,255,0.7)' }}>{events?.[0]?.description}</p>
               <a href="https://pitchday.cmplexpo.com/backend/public/apply_now" target="_blank" rel="noopener noreferrer" className="btn-gold inline-block self-start px-6 py-3 text-sm font-bold tracking-wide">
                 <span className="relative z-10">{events?.[0]?.cta}</span>
               </a>
@@ -126,7 +128,7 @@ export default function SpecialEventsSection() {
                   <p className="text-xs mb-1" style={{ color: 'rgba(255,255,255,0.65)' }}>{event?.subtitle}</p>
                   <h3 className="font-display font-semibold text-lg mb-2" style={{ color: '#FFFFFF' }}>{event?.title}</h3>
                   <a
-                  href="#register"
+                  href={event?.link || '#register'}
                   className="text-xs font-bold tracking-wider uppercase transition-colors"
                   style={{ color: event?.accentColor }}>
                     {event?.cta} →
