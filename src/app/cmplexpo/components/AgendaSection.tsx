@@ -52,6 +52,18 @@ const speakerPhotos: Record<string, SpeakerInfo> = {
     company: 'Imfresh and Ayuvya Ayurveda',
     img: '/assets/members/ASTHA JAIN.png',
   },
+  'Nilesh Lele': {
+    name: 'Nilesh Lele',
+    role: 'President',
+    company: 'CASMB',
+    img: '/assets/members/NILESH LELE.png',
+  },
+  'Yash Rajani': {
+    name: 'Yash Rajani',
+    role: 'CEO',
+    company: 'Karma Logistical Services',
+    img: '/assets/members/YASH RAJANI.png',
+  },
   'Varun Sheth': {
     name: 'Varun Sheth',
     role: 'Director',
@@ -433,6 +445,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         title: 'Driving Growth of Food Startups and MSMEs',
         description:
           'A focused session on accelerating growth for food startups and MSMEs, presented by the Chamber for Advancement of Small and Medium Businesses.',
+        speakerDetails: [speakerPhotos['Nilesh Lele'], speakerPhotos['Yash Rajani']],
       },
       {
         time: '12:30 PM – 1:30 PM',
