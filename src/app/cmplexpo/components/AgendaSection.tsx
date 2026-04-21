@@ -315,7 +315,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         type: 'event',
         title: 'Inauguration and Keynote',
         description:
-          "The official opening of CMPL Expo 2026 — Asia's largest Contract Manufacturing & Private Label platform. Join us for a landmark inauguration ceremony.",
+          "The official opening of CMPL Expo 2026 - Asia's largest Contract Manufacturing & Private Label platform. Join us for a landmark inauguration ceremony.",
         highlight: true,
         speakerDetails: [speakerPhotos['Sunny Leone']],
       },
@@ -325,7 +325,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         track: 'Women Founders Panel Discussion',
         title: 'Owning the Narrative: Building Brands, Becoming the Brand',
         description:
-          'Attention can launch a brand. Authority builds an enterprise. This session examines how founders turn visibility into a scalable business — whether they started with an audience or built one along the way.',
+          'Attention can launch a brand. Authority builds an enterprise. This session examines how founders turn visibility into a scalable business - whether they started with an audience or built one along the way.',
         speakerDetails: [
           speakerPhotos['Carina Chopra'],
           speakerPhotos['Sunny Leone'],
@@ -338,7 +338,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         time: '12:00 PM – 2:00 PM',
         type: 'workshop',
         track: 'BPC Workshop',
-        title: 'Banawat — BPC Workshop',
+        title: 'Banawat - BPC Workshop',
         link: 'https://workshops.cmplexpo.com/banawat-workshop',
         description:
           'A hands-on masterclass for founders and formulators building the next generation of Indian Beauty & Personal Care products. Explore cutting-edge formulation strategies, ingredient innovation, and manufacturing partnerships.',
@@ -372,7 +372,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         time: '2:45 PM – 4:15 PM',
         type: 'workshop',
         track: 'F&B Workshop',
-        title: 'Savore — F&B Workshop',
+        title: 'Savore - F&B Workshop',
         link: 'https://workshops.cmplexpo.com/savore-workshop',
         description:
           'A deep-dive workshop into the future of Indian food and beverage formulation. Explore emerging ingredients, consumer nutrition trends, and how to build products that resonate with the evolving Indian palate in 2026–27.',
@@ -384,7 +384,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         track: 'R&D',
         title: 'Reformulate or Be Replaced: The Science, Pressure & Strategy Behind Modern FMCG',
         description:
-          "Reformulation is no longer damage control — it's a core R&D strategy. As regulators tighten scrutiny and pressures from ingredient bans, commodity volatility, and clean label demands grow, brands must rebuild formulations without compromising efficacy or trust. This session explores how R&D leaders are turning reformulation into a competitive advantage.",
+          "Reformulation is no longer damage control - it's a core R&D strategy. As regulators tighten scrutiny and pressures from ingredient bans, commodity volatility, and clean label demands grow, brands must rebuild formulations without compromising efficacy or trust. This session explores how R&D leaders are turning reformulation into a competitive advantage.",
         speakerDetails: [
           speakerPhotos['Swarn Singh'],
           speakerPhotos['Dr. Reena Bibals'],
@@ -395,9 +395,9 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         time: '4:30 PM – 6:30 PM',
         type: 'event',
         track: 'Exclusive',
-        title: 'An Exclusive Food Founders Meetup — Mumbai',
+        title: 'An Exclusive Food Founders Meetup - Mumbai',
         description:
-          "Exclusively for F&B founders happening in collaboration with Equinox Lab. An exclusive, invite-only gathering for F&B founders to connect, share insights, and build meaningful partnerships. Curated conversations in a relaxed setting — no pitches, just real talk between people building India's food future.",
+          "Exclusively for F&B founders happening in collaboration with Equinox Lab. An exclusive, invite-only gathering for F&B founders to connect, share insights, and build meaningful partnerships. Curated conversations in a relaxed setting - no pitches, just real talk between people building India's food future.",
       },
     ],
   },
@@ -410,7 +410,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         track: 'Founders Roundtable',
         title: 'Scars & Scale: What Building an FMCG Brand in India Really Costs',
         description:
-          "Every brand has an origin story — few have an honest one. This roundtable brings together leading FMCG founders to reflect on what nearly went wrong, what they'd do differently, and what scaling a brand truly demands. For early-stage founders and product builders, this is where the real playbook gets shared.",
+          "Every brand has an origin story - few have an honest one. This roundtable brings together leading FMCG founders to reflect on what nearly went wrong, what they'd do differently, and what scaling a brand truly demands. For early-stage founders and product builders, this is where the real playbook gets shared.",
         speakerDetails: [
           speakerPhotos['Raaj Chakravarti'],
           speakerPhotos['Akash Valia'],
@@ -434,7 +434,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         track: 'Hygiene',
         title: "Dirty Secret: Why Hygiene Still Can't Crack the Indian Mass Market",
         description:
-          'Post-COVID growth has been strong, but mass-market habit formation remains weak. Beyond price, behaviour, culture, and relevance limit adoption — even when distribution reaches the last mile. With innovation focused on urban premium consumers, the key challenge is turning one-time trials into repeat usage at scale.',
+          'Post-COVID growth has been strong, but mass-market habit formation remains weak. Beyond price, behaviour, culture, and relevance limit adoption - even when distribution reaches the last mile. With innovation focused on urban premium consumers, the key challenge is turning one-time trials into repeat usage at scale.',
         speakerDetails: [
           speakerPhotos['Surbhi Bafna'],
           speakerPhotos['Ketan Munoth'],
@@ -447,7 +447,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         time: '12:15 PM – 2:15 PM',
         type: 'workshop',
         track: 'Packaging Workshop',
-        title: 'Unpack — Packaging Workshop',
+        title: 'Unpack - Packaging Workshop',
         link: 'https://workshops.cmplexpo.com/unpack-workshop',
         description:
           'Where real FMCG packs get tested. Bring your packaging brief or existing pack and get live feedback from industry experts on shelf impact, material choices, sustainability credentials, and retail viability.',
@@ -468,7 +468,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         track: 'Packaging',
         title: 'The Last Layer: The Push and Pull of Packaging Decisions',
         description:
-          "Every packaging decision is a negotiation — between brand ambition, retail realities, and what manufacturing can truly deliver. This session brings the manufacturer's perspective to the centre: what's viable, what's greenwashing, and where briefs meet reality — across sustainable materials, lightweighting, regulations, and shelf presence at Indian scale.",
+          "Every packaging decision is a negotiation - between brand ambition, retail realities, and what manufacturing can truly deliver. This session brings the manufacturer's perspective to the centre: what's viable, what's greenwashing, and where briefs meet reality - across sustainable materials, lightweighting, regulations, and shelf presence at Indian scale.",
         speakerDetails: [
           speakerPhotos['Subhra Sankha Nandi'],
           speakerPhotos['Navin Stuart'],
@@ -491,7 +491,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         type: 'session',
         track: 'Winning the Consumer',
         title:
-          'Trust is the New CAC — Why the Brands Winning in 2026 Stopped Buying Attention and Started Earning It',
+          'Trust is the New CAC - Why the Brands Winning in 2026 Stopped Buying Attention and Started Earning It',
         description:
           'As CAC rises and attention becomes costlier, brands must look beyond paid growth to build sustainably. In an omnichannel world, true differentiation comes from meaningful engagement. Turning first-time buyers into loyal consumers depends on strong positioning, consistent experiences, and a sharp focus on retention.',
         speakerDetails: [
@@ -535,30 +535,42 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
 
 const typeColors: Record<string, string> = {
   session: '#B8860B',
-  workshop: '#6B5FBD',
+  workshop: 'rgb(124, 58, 237)',
   break: '#9A8E7A',
   event: '#C94E4E',
 };
 
 const typeLabels: Record<string, string> = {
   session: 'SPEAQ',
-  workshop: 'Workshop Area',
+  workshop: 'Special Event Area',
   break: 'Break',
   event: 'Special Event Area',
 };
 
-function SessionSpeakers({ speakers }: { speakers: SpeakerInfo[] }) {
+const workshopColors: Record<string, string> = {
+  Banawat: 'rgb(124, 58, 237)',
+  Savore: 'rgb(22, 163, 74)',
+  Unpack: 'rgb(146, 64, 14)',
+  'Launch Pad': 'rgb(37, 99, 235)',
+};
+
+function getWorkshopColor(title: string): string | null {
+  for (const key of Object.keys(workshopColors)) {
+    if (title.toLowerCase().includes(key.toLowerCase())) return workshopColors[key];
+  }
+  return null;
+}
+
+function SessionSpeakers({ speakers, isWorkshop }: { speakers: SpeakerInfo[]; isWorkshop?: boolean }) {
   return (
     <div className="flex flex-wrap gap-2 sm:gap-3 mt-4">
       {speakers.map((spk, i) => (
         <div
           key={i}
           className="flex items-center gap-2 sm:gap-2.5 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2"
-          style={{ background: 'rgba(184,134,11,0.05)', border: '1px solid rgba(184,134,11,0.15)' }}
+          style={isWorkshop ? { background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.08)' } : { background: 'rgba(184,134,11,0.05)', border: '1px solid rgba(184,134,11,0.15)' }}
         >
-          <div
-            className="rounded-full overflow-hidden flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24"
-          >
+          <div className="rounded-full overflow-hidden flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24">
             <AppImage
               src={spk.img}
               alt={`${spk.name}, ${spk.role} at ${spk.company}`}
@@ -571,10 +583,16 @@ function SessionSpeakers({ speakers }: { speakers: SpeakerInfo[] }) {
             <p className="text-expo-fg text-[11px] sm:text-xs font-semibold leading-tight  max-w-[100px] sm:max-w-[140px]">
               {spk.name}
             </p>
-            <p className="text-[10px] sm:text-xs leading-tight  max-w-[100px] sm:max-w-[140px]" style={{ color: '#7A6040' }}>
+            <p
+              className="text-[10px] sm:text-xs leading-tight  max-w-[100px] sm:max-w-[140px]"
+              style={{ color: '#7A6040' }}
+            >
               {spk.role}
             </p>
-            <p className="text-[9px] sm:text-[10px] leading-tight  max-w-[100px] sm:max-w-[140px]" style={{ color: '#B8860B' }}>
+            <p
+              className="text-[9px] sm:text-[10px] leading-tight  max-w-[100px] sm:max-w-[140px]"
+              style={{ color: '#B8860B' }}
+            >
               {spk.company}
             </p>
           </div>
@@ -591,7 +609,7 @@ export default function AgendaSection() {
   return (
     <section
       id="agenda"
-      className="relative z-10 py-12 sm:py-24 md:py-28 border-b"
+      className="relative z-10 py-10 sm:py-14 md:py-20 border-b"
       style={{ background: '#FAFAF8', borderColor: 'rgba(184,134,11,0.12)' }}
     >
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12">
@@ -620,7 +638,7 @@ export default function AgendaSection() {
             <button
               key={day}
               onClick={() => setActiveDay(day)}
-              className={`relative px-4 sm:px-8 py-2.5 sm:py-3.5 text-xs sm:text-sm font-bold tracking-widest uppercase rounded-lg transition-all duration-300 ${
+              className={`relative px-6 sm:px-10 py-3 sm:py-4 text-sm sm:text-base font-bold tracking-widest uppercase rounded-lg transition-all duration-300 ${
                 activeDay === day
                   ? 'text-white shadow-lg'
                   : 'text-expo-muted border hover:border-gold/50'
@@ -658,12 +676,23 @@ export default function AgendaSection() {
             <div
               key={i}
               className={`session-card rounded-lg p-3 sm:p-5 md:p-6`}
-              style={{
-                background: session.highlight ? 'rgba(184,134,11,0.06)' : '#FFFFFF',
-                border: session.highlight
-                  ? '1px solid rgba(184,134,11,0.25)'
-                  : '1px solid rgba(184,134,11,0.1)',
-              }}
+              style={(() => {
+                const wc = session.type === 'workshop' ? getWorkshopColor(session.title) : null;
+                const wcBg = wc ? wc.replace('rgb(', 'rgba(').replace(')', ', 0.05)') : null;
+                const wcBorder = wc ? wc.replace('rgb(', 'rgba(').replace(')', ', 0.15)') : null;
+                return {
+                  background: session.highlight
+                    ? 'rgba(184,134,11,0.06)'
+                    : wcBg || (session.type === 'workshop' ? '#fafaf826' : '#FFFFFF'),
+                  border: session.highlight
+                    ? '1px solid rgba(184,134,11,0.25)'
+                    : wcBorder
+                      ? `1px solid ${wcBorder}`
+                      : session.type === 'workshop'
+                        ? '1px solid rgba(107,95,189,0.2)'
+                        : '1px solid rgba(184,134,11,0.1)',
+                };
+              })()}
             >
               <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4">
                 {/* Time */}
@@ -678,14 +707,23 @@ export default function AgendaSection() {
 
                 {/* Content */}
                 <div className="flex-1">
+                  {(() => {
+                    const badgeColor = (session.type === 'workshop' && getWorkshopColor(session.title)) || typeColors[session.type];
+                    const badgeColorBg = session.type === 'workshop' && getWorkshopColor(session.title)
+                      ? getWorkshopColor(session.title)!.replace('rgb(', 'rgba(').replace(')', ', 0.1)')
+                      : `${typeColors[session.type]}15`;
+                    const badgeColorBorder = session.type === 'workshop' && getWorkshopColor(session.title)
+                      ? getWorkshopColor(session.title)!.replace('rgb(', 'rgba(').replace(')', ', 0.25)')
+                      : `${typeColors[session.type]}30`;
+                    return (
                   <div className="flex flex-wrap items-center gap-2 mb-2">
                     {session.track && (
                       <span
                         className="text-[9px] font-bold tracking-[0.2em] uppercase px-2 py-0.5 rounded"
                         style={{
-                          background: `${typeColors[session.type]}15`,
-                          color: typeColors[session.type],
-                          border: `1px solid ${typeColors[session.type]}30`,
+                          background: badgeColorBg,
+                          color: badgeColor,
+                          border: `1px solid ${badgeColorBorder}`,
                         }}
                       >
                         {session.track}
@@ -694,13 +732,15 @@ export default function AgendaSection() {
                     <span
                       className="text-[9px] font-bold tracking-[0.2em] uppercase px-2 py-0.5 rounded"
                       style={{
-                        background: `${typeColors[session.type]}10`,
-                        color: typeColors[session.type],
+                        background: badgeColorBg,
+                        color: badgeColor,
                       }}
                     >
                       {typeLabels[session.type]}
                     </span>
                   </div>
+                    );
+                  })()}
 
                   <h3
                     className={`font-display font-semibold leading-snug mb-2 ${
@@ -729,7 +769,7 @@ export default function AgendaSection() {
                   )}
 
                   {session.speakerDetails && session.speakerDetails.length > 0 && (
-                    <SessionSpeakers speakers={session.speakerDetails} />
+                    <SessionSpeakers speakers={session.speakerDetails} isWorkshop={session.type === 'workshop'} />
                   )}
                 </div>
               </div>

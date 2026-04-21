@@ -9,7 +9,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
-  title: 'CMPLExpo 2026 — Asia\'s Contract Manufacturing & Private Label Expo',
+  title: 'CMPLExpo 2026 - Asia\'s Contract Manufacturing & Private Label Expo',
   description: 'Join Asia\'s largest Contract Manufacturing & Private Label Expo. 500+ exhibitors, 30,000+ visitors, pre-scheduled meetings. May 4–6, 2026 at Jio World Convention Centre, Mumbai.',
   icons: {
     icon: [

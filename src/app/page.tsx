@@ -30,7 +30,7 @@ export default function HomePage() {
       <AgendaSection />
       <FeaturedExperiencesSection />
       <SpecialEventsSection />
-      <WhyAttendSection />
+      {/* <WhyAttendSection /> */}
       <MidCTASection />
       <VisitorTypesSection />
       <FooterCTASection />

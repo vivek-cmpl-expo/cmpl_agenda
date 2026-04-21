@@ -65,7 +65,7 @@ export default function HeroSection() {
             />
           </div>
         ))}
-        {/* Dark scrim — black overlay from bottom */}
+        {/* Dark scrim - black overlay from bottom */}
         <div
           className="absolute inset-0 z-10"
           style={{
@@ -90,7 +90,7 @@ export default function HeroSection() {
           <div className="grid grid-cols-1 md:grid-cols-12 items-end gap-0">
             {/* Left: Headline */}
             <div className="col-span-1 md:col-span-8 pb-8 md:pb-16">
-              {/* Badge — inline in content flow */}
+              {/* Badge - inline in content flow */}
               {/* <div className="mb-5">
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border text-[10px] font-semibold tracking-[0.2em] uppercase"
                 style={{ borderColor: 'rgba(184,134,11,0.5)', background: 'rgba(184,134,11,0.15)', color: '#D4A017' }}>

@@ -9,17 +9,17 @@ const components = [
   {
     icon: '🛠',
     title: 'Workshops & Industry Sessions',
-    description: 'Hands-on learning with Banawat Formula X, Savoré F&B, Unpack Packaging Jam, and Launchpad Export.',
+    description: 'Hands-on learning with Banawat - BPC Workshop, Savoré - F&B Workshop, Unpack - Packaging Workshop, and Launchpad - Export Workshop.',
   },
   {
     icon: '💡',
     title: 'Pitch Day',
-    description: 'High-potential FMCG brands present to an invited panel of top investors. Day 3 — 11:00 AM to 5:00 PM.',
+    description: 'High-potential FMCG brands present to an invited panel of top investors.',
   },
   {
     icon: '🏆',
     title: 'Disruptors Awards Night',
-    description: '50+ awards recognizing innovation and excellence. Chief Guest: Sunny Leone. Day 1 from 6:30 PM.',
+    description: '50+ awards recognizing innovation and excellence. <br/><b>Chief Guest: Sunny Leone.</b>',
   },
   {
     icon: '🤝',
@@ -37,7 +37,7 @@ export default function WhatsInsideSection() {
   return (
     <section
       id="inside"
-      className="relative z-10 py-12 sm:py-24 md:py-28 border-b"
+      className="relative z-10 py-10 sm:py-14 md:py-20 border-b"
       style={{ background: '#F5F3EE', borderColor: 'rgba(184,134,11,0.12)' }}
     >
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12">
@@ -60,7 +60,7 @@ export default function WhatsInsideSection() {
           </div>
           <div className="col-span-1 md:col-span-5 md:col-start-8 flex items-end scroll-reveal delay-1">
             <p className="text-expo-muted leading-relaxed">
-              Three days. Six distinct formats. Whether you're here to learn, pitch, network, or manufacture — there's a dedicated arena for every ambition.
+              Three days. Six distinct formats. Whether you're here to learn, pitch, network, or manufacture - there's a dedicated arena for every ambition.
             </p>
           </div>
         </div>
@@ -82,7 +82,7 @@ export default function WhatsInsideSection() {
                   {item?.icon}
                 </div>
                 <h3 className="font-display font-semibold text-expo-fg text-xl mb-2">{item?.title}</h3>
-                <p className="text-expo-muted text-sm leading-relaxed">{item?.description}</p>
+                <p className="text-expo-muted text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: item?.description }} />
               </div>
             </div>
           ))}

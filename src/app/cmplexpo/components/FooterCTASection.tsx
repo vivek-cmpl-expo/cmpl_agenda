@@ -3,7 +3,7 @@ import AppImage from '@/components/ui/AppImage';
 
 export default function FooterCTASection() {
   return (
-    <section id="register" className="relative z-10 py-16 sm:py-28 md:py-36 overflow-hidden">
+    <section id="register" className="relative z-10 py-10 sm:py-16 md:py-24 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <AppImage
@@ -46,7 +46,7 @@ export default function FooterCTASection() {
             className="font-display font-bold leading-[0.88] tracking-tight mb-6 scroll-reveal"
             style={{ fontSize: 'clamp(2.5rem, 7vw, 6.5rem)', color: '#FFFFFF' }}
           >
-            From Idea to Shelf —
+            From Idea to Shelf -
             <br />
             <span className="text-gold-gradient">Build, Scale,</span>
             <br />

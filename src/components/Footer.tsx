@@ -15,9 +15,9 @@ export default function Footer() {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12 py-8 md:py-16">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-8">
           {/* Left: Logo + tagline */}
-          <div className="flex items-center">
+          <a href="https://cmplexpo.com/" target="_blank" rel="noopener noreferrer" className="flex items-center">
             <AppLogo src="/assets/logo/Logo-m26.jpg" size={400} className="h-10 sm:h-14 md:h-20 lg:h-32 w-auto" />
-          </div>
+          </a>
 
           {/* Center: Links */}
           <nav className="flex flex-wrap gap-x-4 sm:gap-x-8 gap-y-2">

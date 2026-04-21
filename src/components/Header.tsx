@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import AppLogo from '@/components/ui/AppLogo';
 import Icon from '@/components/ui/AppIcon';
-import Link from 'next/link';
+
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -72,9 +72,9 @@ export default function Header() {
       >
         <div className="max-w-[1440px] mx-auto px-4 md:px-12 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center group">
+          <a href="https://cmplexpo.com/" target="_blank" rel="noopener noreferrer" className="flex items-center group">
             <AppLogo src="/assets/logo/Logo-m26.jpg" size={400} className="h-10 sm:h-14 md:h-20 lg:h-32 w-auto" />
-          </Link>
+          </a>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
@@ -82,7 +82,7 @@ export default function Header() {
               <a
                 key={link?.label}
                 href={link?.href}
-                className="text-[11px] font-semibold tracking-[0.18em] uppercase transition-colors"
+                className="text-[13px] font-semibold tracking-[0.18em] uppercase transition-colors"
                 style={{ color: '#5C5040' }}
                 onMouseEnter={e => (e.currentTarget.style.color = '#B8860B')}
                 onMouseLeave={e => (e.currentTarget.style.color = '#5C5040')}
@@ -98,7 +98,7 @@ export default function Header() {
               href="https://cmpl.world/"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-gold relative px-6 py-2.5 text-[11px] font-bold tracking-widest uppercase"
+              className="btn-gold relative px-6 py-2.5 text-[13px] font-bold tracking-widest uppercase"
             >
               <span className="relative z-10">Register to Visit</span>
             </a>

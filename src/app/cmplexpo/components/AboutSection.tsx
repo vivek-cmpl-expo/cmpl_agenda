@@ -14,7 +14,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="relative z-10 py-12 sm:py-24 md:py-32 border-b"
+      className="relative z-10 py-10 sm:py-14 md:py-20 border-b"
       style={{ background: '#FAFAF8', borderColor: 'rgba(184,134,11,0.12)' }}
     >
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12">
@@ -36,13 +36,13 @@ export default function AboutSection() {
               <span className="text-gold-gradient italic">CMPL Expo?</span>
             </h2>
 
-            <p className="text-expo-muted text-lg leading-relaxed mb-8 scroll-reveal delay-1">
+            <p className="text-expo-muted text-lg leading-relaxed mb-8 scroll-reveal delay-1 text-justify">
               Asia's largest platform connecting retailers, D2C brands, manufacturers, suppliers,
               and innovators across the entire consumer goods value chain.
             </p>
 
-            <p className="text-expo-muted leading-relaxed mb-10 scroll-reveal delay-2">
-              Since 2019, CMPL Expo has been the definitive meeting point for the FMCG industry —
+            <p className="text-expo-muted leading-relaxed mb-10 scroll-reveal delay-2 text-justify">
+              Since 2019, CMPL Expo has been the definitive meeting point for the FMCG industry -
               where private label brands are born, manufacturing partnerships are forged, and the
               future of Indian consumer goods is shaped.
             </p>
@@ -85,7 +85,7 @@ export default function AboutSection() {
               <div
                 className="absolute inset-0"
                 style={{
-                  background: 'rgba(0,0,0,0.1)',
+                  background: 'rgba(0,0,0,0.35)',
                 }}
               />
 

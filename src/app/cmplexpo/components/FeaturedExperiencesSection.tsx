@@ -13,7 +13,7 @@ const experiences = [
     badgeColor: '#B8860B',
   },
   {
-    title: 'Banawat Formula X',
+    title: 'Banawat - BPC Workshop',
     subtitle: 'Workshop Edition 2',
     description:
       'Build the Next Generation Indian BPC Product. Mentored by founders of Noya Beautyworks and Mascot Spincontrol Universal.',
@@ -23,7 +23,7 @@ const experiences = [
     badgeColor: '#6B5FBD',
   },
   {
-    title: 'Savoré F&B Workshop',
+    title: 'Savoré - F&B Workshop',
     subtitle: 'Edition 2 · Day 1',
     description:
       'Body OS building: For the way India will eat in 2026–27. Mentored by F2F Food & Beverage Consultants.',
@@ -33,7 +33,7 @@ const experiences = [
     badgeColor: '#6B5FBD',
   },
   {
-    title: 'Unpack Packaging Jam',
+    title: 'Unpack - Packaging Workshop',
     subtitle: 'Edition 2 · Day 2',
     description:
       'Does your pack make the grade? Real FMCG packs tested live by Pureplay Skin Sciences and Alpla Group India.',
@@ -43,7 +43,7 @@ const experiences = [
     badgeColor: '#6B5FBD',
   },
   {
-    title: 'Launchpad Export Program',
+    title: 'Launchpad - Export Workshop',
     subtitle: 'Scale Across Channels',
     description:
       'Put your products on shelves globally. Workshop partner: Alibaba.com. Mentored by Head of Marketing, Alibaba.com India.',
@@ -58,7 +58,7 @@ export default function FeaturedExperiencesSection() {
   return (
     <section
       id="experiences"
-      className="relative z-10 py-16 md:py-28 border-b"
+      className="relative z-10 py-10 sm:py-14 md:py-20 border-b"
       style={{ background: '#F5F3EE', borderColor: 'rgba(184,134,11,0.12)' }}
     >
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12">
@@ -82,7 +82,7 @@ export default function FeaturedExperiencesSection() {
           <div className="col-span-1 md:col-span-5 md:col-start-8 flex items-end scroll-reveal delay-1">
             <p className="text-expo-muted leading-relaxed">
               Five curated programs spanning knowledge, formulation, food, packaging, and global
-              distribution — each designed to deliver one tangible outcome.
+              distribution - each designed to deliver one tangible outcome.
             </p>
           </div>
         </div>

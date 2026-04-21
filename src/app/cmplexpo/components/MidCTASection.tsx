@@ -5,7 +5,7 @@ export default function MidCTASection() {
   return (
     <section
       id="access"
-      className="relative z-10 py-24 md:py-32 overflow-hidden"
+      className="relative z-10 py-10 sm:py-14 md:py-20 overflow-hidden"
       style={{ background: '#F5F3EE' }}
     >
       {/* Background image */}
