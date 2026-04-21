@@ -19,6 +19,7 @@ type Session = {
   description?: string;
   speakerDetails?: SpeakerInfo[];
   highlight?: boolean;
+  banner?: { desktop: string; mobile: string };
 };
 
 const speakerPhotos: Record<string, SpeakerInfo> = {
@@ -417,6 +418,17 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         description:
           "Exclusively for F&B founders happening in collaboration with Equinox Lab. An exclusive, invite-only gathering for F&B founders to connect, share insights, and build meaningful partnerships. Curated conversations in a relaxed setting - no pitches, just real talk between people building India's food future.",
       },
+      {
+        time: '6:30 PM Onwards',
+        type: 'event',
+        title: 'CMPL Disruptors Awards 2026',
+        description: '',
+        highlight: true,
+        banner: {
+          desktop: '/assets/event/CMPL-SUNNY-BANNERS-M26-H08.webp',
+          mobile: '/assets/event/CMPL-SUNNY-BANNERS-M26-V08.webp',
+        },
+      },
     ],
   },
   'DAY 2': {
@@ -692,6 +704,24 @@ export default function AgendaSection() {
         {/* Sessions */}
         <div className="space-y-2">
           {agenda[activeDay].sessions.map((session, i) => (
+            session.banner ? (
+              <div key={i} className="rounded-lg overflow-hidden">
+                <AppImage
+                  src={session.banner.desktop}
+                  alt={session.title}
+                  width={1200}
+                  height={300}
+                  className="w-full h-auto hidden sm:block rounded-lg"
+                />
+                <AppImage
+                  src={session.banner.mobile}
+                  alt={session.title}
+                  width={600}
+                  height={600}
+                  className="w-full h-auto block sm:hidden rounded-lg"
+                />
+              </div>
+            ) :
             <div
               key={i}
               className={`session-card rounded-lg p-3 sm:p-5 md:p-6`}
@@ -790,6 +820,7 @@ export default function AgendaSection() {
                   {session.speakerDetails && session.speakerDetails.length > 0 && (
                     <SessionSpeakers speakers={session.speakerDetails} isWorkshop={session.type === 'workshop'} />
                   )}
+
                 </div>
               </div>
             </div>
