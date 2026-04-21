@@ -52,6 +52,12 @@ const speakerPhotos: Record<string, SpeakerInfo> = {
     company: 'Imfresh and Ayuvya Ayurveda',
     img: '/assets/members/ASTHA JAIN.png',
   },
+  'Varun Sheth': {
+    name: 'Varun Sheth',
+    role: 'Director',
+    company: 'Noto - Healthy Ice Cream',
+    img: '/assets/members/VARUN SHETH.png',
+  },
   'Sunny Leone': {
     name: 'Sunny Leone',
     role: 'Actress & Founder',
@@ -460,7 +466,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         title: 'The Contradiction Economy: Building F&B for a Consumer Who Wants Everything',
         description:
           'Creating a successful product now requires balancing function, clean label expectations, premium appeal, and affordability. This session examines how brands can develop smarter product briefs, assess which emerging ingredients are truly market-ready, and scale premium innovation beyond metros without compromising quality or price.',
-        speakerDetails: [speakerPhotos['Ashwin Bhadri'], speakerPhotos['Kinnari Gosrani Shah']],
+        speakerDetails: [speakerPhotos['Ashwin Bhadri'], speakerPhotos['Varun Sheth'], speakerPhotos['Kinnari Gosrani Shah']],
       },
       {
         time: '2:45 PM – 3:30 PM',
@@ -633,12 +639,12 @@ export default function AgendaSection() {
         </div>
 
         {/* Tabs */}
-        <div className="flex gap-2 sm:gap-3 mb-8 sm:mb-10 scroll-reveal flex-wrap">
+        <div className="grid grid-cols-3 gap-3 sm:gap-4 mb-8 sm:mb-10 scroll-reveal">
           {days.map((day) => (
             <button
               key={day}
               onClick={() => setActiveDay(day)}
-              className={`relative px-6 sm:px-10 py-3 sm:py-4 text-sm sm:text-base font-bold tracking-widest uppercase rounded-lg transition-all duration-300 ${
+              className={`relative py-3 sm:py-4 text-sm sm:text-base font-bold tracking-widest uppercase rounded-lg transition-all duration-300 ${
                 activeDay === day
                   ? 'text-white shadow-lg'
                   : 'text-expo-muted border hover:border-gold/50'
