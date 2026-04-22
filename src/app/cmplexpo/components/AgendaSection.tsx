@@ -531,14 +531,14 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
           speakerPhotos['Astha Jain'],
         ],
       },
-      {
-        time: '4:45 PM – 5:30 PM',
-        type: 'event',
-        title: 'Mompreneur Panel',
-        description:
-          'A dedicated panel celebrating and empowering mom entrepreneurs building consumer brands. Real stories, practical insights, and community building for founders balancing family and business.',
-        highlight: true,
-      },
+      // {
+      //   time: '4:45 PM – 5:30 PM',
+      //   type: 'event',
+      //   title: 'Mompreneur Panel',
+      //   description:
+      //     'A dedicated panel celebrating and empowering mom entrepreneurs building consumer brands. Real stories, practical insights, and community building for founders balancing family and business.',
+      //   highlight: true,
+      // },
     ],
   },
   'DAY 3': {
