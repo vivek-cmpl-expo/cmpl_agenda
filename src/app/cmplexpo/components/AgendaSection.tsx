@@ -23,6 +23,48 @@ type Session = {
 };
 
 const speakerPhotos: Record<string, SpeakerInfo> = {
+  'Shaili Chopra': {
+    name: 'Shaili Chopra',
+    role: 'Founder',
+    company: 'Gytree & SheThePeople',
+    img: '/assets/members/SHAILI CHOPRA.png',
+  },
+  'Dr. Prabodh Halde': {
+    name: 'Dr. Prabodh Halde',
+    role: 'Head Global Regulatory, Public Policy and Advocacy',
+    company: 'Marico Limited',
+    img: '/assets/members/FT. PRABODH HALDE (PHD).png',
+  },
+  'Varun Kapur': {
+    name: 'Varun Kapur',
+    role: 'Founder',
+    company: 'YU Foods',
+    img: '/assets/images/no_image.png',
+  },
+  'Vinay Maheshwari': {
+    name: 'Vinay Maheshwari',
+    role: 'Founder & CEO',
+    company: 'The Health Factory',
+    img: '/assets/members/VINAY MAHESHWARI.png',
+  },
+  'Ravi Ramachandran': {
+    name: 'Ravi Ramachandran',
+    role: 'Co-Founder & CEO',
+    company: 'Nua',
+    img: '/assets/members/RAVI RAMACHANDRAN.png',
+  },
+  'Pranav Saraf': {
+    name: 'Pranav Saraf',
+    role: 'Founder',
+    company: 'Carbamide Forte',
+    img: '/assets/members/PRANAV SARAF.png',
+  },
+  'Neha K Kanabar': {
+    name: 'Neha K Kanabar',
+    role: 'Founder',
+    company: 'UNIMO & INDIA FOUNDING MEMBER - NU SKIN',
+    img: '/assets/members/NEHA K KANABAR.png',
+  },
   'Carina Chopra': {
     name: 'Carina Chopra',
     role: 'Founder (Stealth)',
@@ -351,6 +393,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
           speakerPhotos['Naiyya Saggi'],
           speakerPhotos['Swati Mehra'],
           speakerPhotos['Siddha Jain'],
+          speakerPhotos['Shaili Chopra'],
         ],
       },
       {
@@ -405,7 +448,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         description:
           "Reformulation is no longer damage control - it's a core R&D strategy. As regulators tighten scrutiny and pressures from ingredient bans, commodity volatility, and clean label demands grow, brands must rebuild formulations without compromising efficacy or trust. This session explores how R&D leaders are turning reformulation into a competitive advantage.",
         speakerDetails: [
-          speakerPhotos['Swarn Singh'],
+          speakerPhotos['Dr. Prabodh Halde'],
           speakerPhotos['Dr. Reena Bibals'],
           speakerPhotos['Rinka Banerjee'],
         ],
@@ -491,7 +534,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         title: 'The Contradiction Economy: Building F&B for a Consumer Who Wants Everything',
         description:
           'Creating a successful product now requires balancing function, clean label expectations, premium appeal, and affordability. This session examines how brands can develop smarter product briefs, assess which emerging ingredients are truly market-ready, and scale premium innovation beyond metros without compromising quality or price.',
-        speakerDetails: [speakerPhotos['Ashwin Bhadri'], speakerPhotos['Varun Sheth'], speakerPhotos['Kinnari Gosrani Shah']],
+        speakerDetails: [speakerPhotos['Ashwin Bhadri'], speakerPhotos['Varun Sheth'], speakerPhotos['Kinnari Gosrani Shah'], speakerPhotos['Varun Kapur'], speakerPhotos['Vinay Maheshwari']],
       },
       {
         time: '2:45 PM – 3:30 PM',
@@ -529,6 +572,9 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
           speakerPhotos['Neelam Lal'],
           speakerPhotos['Saumyadeep Mukherjee'],
           speakerPhotos['Astha Jain'],
+          speakerPhotos['Ravi Ramachandran'],
+          speakerPhotos['Pranav Saraf'],
+          speakerPhotos['Neha K Kanabar'],
         ],
       },
       // {
