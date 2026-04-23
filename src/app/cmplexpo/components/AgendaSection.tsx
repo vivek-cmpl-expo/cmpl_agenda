@@ -478,6 +478,23 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
     date: 'Tuesday, 05 May 2026',
     sessions: [
       {
+        time: '11:00 AM - 12:00 AM',
+        type: 'event',
+        title: 'Global Envoys Preview: A Curated Walkthrough',
+        description:
+          'An invitation-only walkthrough of CMPL Expo 2026, curated exclusively for diplomatic missions and investment bodies to explore bilateral trade, cross-border investment, and collaboration opportunities.',
+        highlight: true,
+      },
+      {
+        time: '11:00 AM – 12:00 PM',
+        type: 'event',
+        track: 'CASMB',
+        title: 'Driving Growth of Food Startups and MSMEs',
+        description:
+          'A focused session on accelerating growth for food startups and MSMEs, presented by the Chamber for Advancement of Small and Medium Businesses.',
+        speakerDetails: [speakerPhotos['Nilesh Lele'], speakerPhotos['Yash Rajani']],
+      },
+      {
         time: '11:30 AM – 12:15 PM',
         type: 'session',
         track: 'Founders Roundtable',
@@ -494,13 +511,14 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         ],
       },
       {
-        time: '11:00 AM – 12:00 PM',
-        type: 'event',
-        track: 'CASMB',
-        title: 'Driving Growth of Food Startups and MSMEs',
+        time: '12:15 PM – 2:15 PM',
+        type: 'workshop',
+        track: 'Packaging Workshop',
+        title: 'Unpack - Packaging Workshop',
+        link: 'https://workshops.cmplexpo.com/unpack-workshop',
         description:
-          'A focused session on accelerating growth for food startups and MSMEs, presented by the Chamber for Advancement of Small and Medium Businesses.',
-        speakerDetails: [speakerPhotos['Nilesh Lele'], speakerPhotos['Yash Rajani']],
+          'Where real FMCG packs get tested. Bring your packaging brief or existing pack and get live feedback from industry experts on shelf impact, material choices, sustainability credentials, and retail viability.',
+        speakerDetails: [speakerPhotos['Vaibhav Dixit'], speakerPhotos['Sridhar J']],
       },
       {
         time: '12:30 PM – 1:30 PM',
@@ -518,16 +536,6 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         ],
       },
       {
-        time: '12:15 PM – 2:15 PM',
-        type: 'workshop',
-        track: 'Packaging Workshop',
-        title: 'Unpack - Packaging Workshop',
-        link: 'https://workshops.cmplexpo.com/unpack-workshop',
-        description:
-          'Where real FMCG packs get tested. Bring your packaging brief or existing pack and get live feedback from industry experts on shelf impact, material choices, sustainability credentials, and retail viability.',
-        speakerDetails: [speakerPhotos['Vaibhav Dixit'], speakerPhotos['Sridhar J']],
-      },
-      {
         time: '1:45 PM – 2:30 PM',
         type: 'session',
         track: 'Food & Beverages',
@@ -542,7 +550,6 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         title: 'The Mompreneurs Walkthrough',
         description:
           'An initiative in collaboration with UNIMO - Universe of Moms, this walkthrough is designed to support and empower women building brands alongside motherhood. It offers a focused platform to explore the CMPL ecosystem, discover the right partners, gain actionable insights, and accelerate their entrepreneurial journey - while connecting with a community that truly understands and champions their path.',
-        highlight: true,
         speakerDetails: [{ name: 'UNIMO', role: 'Universe of Moms', company: 'In collaboration with', img: '/assets/logo/MUMO_Logo.ai.png' }],
       },
       {
@@ -648,13 +655,13 @@ function SessionSpeakers({ speakers, isWorkshop }: { speakers: SpeakerInfo[]; is
           className="flex items-center gap-2 sm:gap-2.5 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2"
           style={isWorkshop ? { background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.08)' } : { background: 'rgba(184,134,11,0.05)', border: '1px solid rgba(184,134,11,0.15)' }}
         >
-          <div className="rounded-full overflow-hidden flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24">
+          <div className={`overflow-hidden flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 ${spk.img.includes('/logo/') ? 'rounded-lg bg-white p-1' : 'rounded-full'}`}>
             <AppImage
               src={spk.img}
               alt={`${spk.name}, ${spk.role} at ${spk.company}`}
               width={96}
               height={96}
-              className="w-full h-full object-cover"
+              className={`w-full h-full ${spk.img.includes('/logo/') ? 'object-contain' : 'object-cover'}`}
             />
           </div>
           <div className="min-w-0">
