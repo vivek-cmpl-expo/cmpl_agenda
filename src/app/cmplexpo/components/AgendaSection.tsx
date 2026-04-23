@@ -39,7 +39,7 @@ const speakerPhotos: Record<string, SpeakerInfo> = {
     name: 'Varun Kapur',
     role: 'Founder',
     company: 'YU Foods',
-    img: '/assets/images/no_image.png',
+    img: '/assets/members/VARUN KAPUR.png',
   },
   'Vinay Maheshwari': {
     name: 'Vinay Maheshwari',
@@ -537,6 +537,15 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         speakerDetails: [speakerPhotos['Ashwin Bhadri'], speakerPhotos['Varun Sheth'], speakerPhotos['Kinnari Gosrani Shah'], speakerPhotos['Varun Kapur'], speakerPhotos['Vinay Maheshwari']],
       },
       {
+        time: '2:00 PM – 3:00 PM',
+        type: 'event',
+        title: 'The Mompreneurs Walkthrough',
+        description:
+          'An initiative in collaboration with UNIMO - Universe of Moms, this walkthrough is designed to support and empower women building brands alongside motherhood. It offers a focused platform to explore the CMPL ecosystem, discover the right partners, gain actionable insights, and accelerate their entrepreneurial journey - while connecting with a community that truly understands and champions their path.',
+        highlight: true,
+        speakerDetails: [{ name: 'UNIMO', role: 'Universe of Moms', company: 'In collaboration with', img: '/assets/logo/MUMO_Logo.ai.png' }],
+      },
+      {
         time: '2:45 PM – 3:30 PM',
         type: 'session',
         track: 'Packaging',
@@ -577,14 +586,6 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
           speakerPhotos['Neha K Kanabar'],
         ],
       },
-      // {
-      //   time: '4:45 PM – 5:30 PM',
-      //   type: 'event',
-      //   title: 'Mompreneur Panel',
-      //   description:
-      //     'A dedicated panel celebrating and empowering mom entrepreneurs building consumer brands. Real stories, practical insights, and community building for founders balancing family and business.',
-      //   highlight: true,
-      // },
     ],
   },
   'DAY 3': {
