@@ -35,6 +35,12 @@ const speakerPhotos: Record<string, SpeakerInfo> = {
     company: 'Marico Limited',
     img: '/assets/members/FT. PRABODH HALDE (PHD).png',
   },
+  'Varun Varma': {
+    name: 'Varun Varma',
+    role: 'Principal',
+    company: 'Fireside Ventures',
+    img: '/assets/members/VARUN VERMA.png',
+  },
   'Varun Kapur': {
     name: 'Varun Kapur',
     role: 'Founder',
@@ -365,6 +371,12 @@ const speakerPhotos: Record<string, SpeakerInfo> = {
     company: 'Aperio Partners',
     img: '/assets/members/ASHIM JOLLY.png',
   },
+  'SIDDHARTH RUSTAGI' : {
+    name:'SIDDHARTH RUSTAGI',
+    role : 'CO-FOUNDER',
+    company : 'INNOBEV',
+    img: '/assets/members/SIDDHARTH RUSTAGI.png',
+  }
 };
 
 const agenda: Record<string, { date: string; sessions: Session[] }> = {
@@ -388,6 +400,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         description:
           'Attention can launch a brand. Authority builds an enterprise. This session examines how founders turn visibility into a scalable business - whether they started with an audience or built one along the way.',
         speakerDetails: [
+          speakerPhotos['Varun Varma'],
           speakerPhotos['Carina Chopra'],
           speakerPhotos['Sunny Leone'],
           speakerPhotos['Naiyya Saggi'],
@@ -438,7 +451,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         link: 'https://workshops.cmplexpo.com/savore-workshop',
         description:
           'A deep-dive workshop into the future of Indian food and beverage formulation. Explore emerging ingredients, consumer nutrition trends, and how to build products that resonate with the evolving Indian palate in 2026–27.',
-        speakerDetails: [speakerPhotos['Ritesh Mathur'], speakerPhotos['FT Subhaprada Nishtala']],
+        speakerDetails: [speakerPhotos['Ritesh Mathur'], speakerPhotos['FT Subhaprada Nishtala'],speakerPhotos['SIDDHARTH RUSTAGI']],
       },
       {
         time: '3:45 PM – 4:30 PM',
@@ -528,6 +541,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         description:
           'Post-COVID growth has been strong, but mass-market habit formation remains weak. Beyond price, behaviour, culture, and relevance limit adoption - even when distribution reaches the last mile. With innovation focused on urban premium consumers, the key challenge is turning one-time trials into repeat usage at scale.',
         speakerDetails: [
+          speakerPhotos['Varun Varma'],
           speakerPhotos['Surbhi Bafna'],
           speakerPhotos['Ketan Munoth'],
           speakerPhotos['Udit (Alok) Birla'],
