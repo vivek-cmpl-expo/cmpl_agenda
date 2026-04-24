@@ -371,12 +371,18 @@ const speakerPhotos: Record<string, SpeakerInfo> = {
     company: 'Aperio Partners',
     img: '/assets/members/ASHIM JOLLY.png',
   },
-  'SIDDHARTH RUSTAGI' : {
-    name:'SIDDHARTH RUSTAGI',
-    role : 'CO-FOUNDER',
-    company : 'Innobev Solutions Pvt. Ltd.',
+  'SIDDHARTH RUSTAGI': {
+    name: 'SIDDHARTH RUSTAGI',
+    role: 'CO-FOUNDER',
+    company: 'Innobev Solutions Pvt. Ltd.',
     img: '/assets/members/SIDDHARTH RUSTAGI.png',
-  }
+  },
+  'Amit Kale': {
+    name: 'AMIT KALE',
+    role: 'ASSOCIATE VICE PRESIDENT',
+    company: 'RELIANCE RETAIL',
+    img: '/assets/members/AMIT KALE.png',
+  },
 };
 
 const agenda: Record<string, { date: string; sessions: Session[] }> = {
@@ -451,7 +457,11 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         link: 'https://workshops.cmplexpo.com/savore-workshop',
         description:
           'A deep-dive workshop into the future of Indian food and beverage formulation. Explore emerging ingredients, consumer nutrition trends, and how to build products that resonate with the evolving Indian palate in 2026–27.',
-        speakerDetails: [speakerPhotos['Ritesh Mathur'], speakerPhotos['FT Subhaprada Nishtala'],speakerPhotos['SIDDHARTH RUSTAGI']],
+        speakerDetails: [
+          speakerPhotos['Ritesh Mathur'],
+          speakerPhotos['FT Subhaprada Nishtala'],
+          speakerPhotos['SIDDHARTH RUSTAGI'],
+        ],
       },
       {
         time: '3:45 PM – 4:30 PM',
@@ -556,7 +566,13 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         title: 'The Contradiction Economy: Building F&B for a Consumer Who Wants Everything',
         description:
           'Creating a successful product now requires balancing function, clean label expectations, premium appeal, and affordability. This session examines how brands can develop smarter product briefs, assess which emerging ingredients are truly market-ready, and scale premium innovation beyond metros without compromising quality or price.',
-        speakerDetails: [speakerPhotos['Ashwin Bhadri'], speakerPhotos['Varun Sheth'], speakerPhotos['Kinnari Gosrani Shah'], speakerPhotos['Varun Kapur'], speakerPhotos['Vinay Maheshwari']],
+        speakerDetails: [
+          speakerPhotos['Ashwin Bhadri'],
+          speakerPhotos['Varun Sheth'],
+          speakerPhotos['Kinnari Gosrani Shah'],
+          speakerPhotos['Varun Kapur'],
+          speakerPhotos['Vinay Maheshwari'],
+        ],
       },
       {
         time: '2:00 PM – 3:00 PM',
@@ -564,7 +580,14 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         title: 'The Mompreneurs Walkthrough',
         description:
           'An initiative in collaboration with UNIMO - Universe of Moms, this walkthrough is designed to support and empower women building brands alongside motherhood. It offers a focused platform to explore the CMPL ecosystem, discover the right partners, gain actionable insights, and accelerate their entrepreneurial journey - while connecting with a community that truly understands and champions their path.',
-        speakerDetails: [{ name: 'UNIMO', role: 'Universe of Moms', company: 'In collaboration with', img: '/assets/logo/MUMO_Logo.ai.png' }],
+        speakerDetails: [
+          {
+            name: 'UNIMO',
+            role: 'Universe of Moms',
+            company: 'In collaboration with',
+            img: '/assets/logo/MUMO_Logo.ai.png',
+          },
+        ],
       },
       {
         time: '2:45 PM – 3:30 PM',
@@ -574,6 +597,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         description:
           "Every packaging decision is a negotiation - between brand ambition, retail realities, and what manufacturing can truly deliver. This session brings the manufacturer's perspective to the centre: what's viable, what's greenwashing, and where briefs meet reality - across sustainable materials, lightweighting, regulations, and shelf presence at Indian scale.",
         speakerDetails: [
+          speakerPhotos['Amit Kale'],
           speakerPhotos['Subhra Sankha Nandi'],
           speakerPhotos['Navin Stuart'],
           speakerPhotos['Deepanker Agarwal'],
@@ -660,16 +684,28 @@ function getWorkshopColor(title: string): string | null {
   return null;
 }
 
-function SessionSpeakers({ speakers, isWorkshop }: { speakers: SpeakerInfo[]; isWorkshop?: boolean }) {
+function SessionSpeakers({
+  speakers,
+  isWorkshop,
+}: {
+  speakers: SpeakerInfo[];
+  isWorkshop?: boolean;
+}) {
   return (
     <div className="flex flex-wrap gap-2 sm:gap-3 mt-4">
       {speakers.map((spk, i) => (
         <div
           key={i}
           className="flex items-center gap-2 sm:gap-2.5 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2"
-          style={isWorkshop ? { background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.08)' } : { background: 'rgba(184,134,11,0.05)', border: '1px solid rgba(184,134,11,0.15)' }}
+          style={
+            isWorkshop
+              ? { background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.08)' }
+              : { background: 'rgba(184,134,11,0.05)', border: '1px solid rgba(184,134,11,0.15)' }
+          }
         >
-          <div className={`overflow-hidden flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 ${spk.img.includes('/logo/') ? 'rounded-lg bg-white p-1' : 'rounded-full'}`}>
+          <div
+            className={`overflow-hidden flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 ${spk.img.includes('/logo/') ? 'rounded-lg bg-white p-1' : 'rounded-full'}`}
+          >
             <AppImage
               src={spk.img}
               alt={`${spk.name}, ${spk.role} at ${spk.company}`}
@@ -771,7 +807,7 @@ export default function AgendaSection() {
 
         {/* Sessions */}
         <div className="space-y-2">
-          {agenda[activeDay].sessions.map((session, i) => (
+          {agenda[activeDay].sessions.map((session, i) =>
             session.banner ? (
               <div key={i} className="rounded-lg overflow-hidden">
                 <AppImage
@@ -789,110 +825,121 @@ export default function AgendaSection() {
                   className="w-full h-auto block sm:hidden rounded-lg"
                 />
               </div>
-            ) :
-            <div
-              key={i}
-              className={`session-card rounded-lg p-3 sm:p-5 md:p-6`}
-              style={(() => {
-                const wc = session.type === 'workshop' ? getWorkshopColor(session.title) : null;
-                const wcBg = wc ? wc.replace('rgb(', 'rgba(').replace(')', ', 0.05)') : null;
-                const wcBorder = wc ? wc.replace('rgb(', 'rgba(').replace(')', ', 0.15)') : null;
-                return {
-                  background: session.highlight
-                    ? 'rgba(184,134,11,0.06)'
-                    : wcBg || (session.type === 'workshop' ? '#fafaf826' : '#FFFFFF'),
-                  border: session.highlight
-                    ? '1px solid rgba(184,134,11,0.25)'
-                    : wcBorder
-                      ? `1px solid ${wcBorder}`
-                      : session.type === 'workshop'
-                        ? '1px solid rgba(107,95,189,0.2)'
-                        : '1px solid rgba(184,134,11,0.1)',
-                };
-              })()}
-            >
-              <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4">
-                {/* Time */}
-                <div className="sm:min-w-[160px]">
-                  <span
-                    className="text-[11px] font-bold tracking-wider uppercase"
-                    style={{ color: '#9A7B20' }}
-                  >
-                    {session.time}
-                  </span>
-                </div>
-
-                {/* Content */}
-                <div className="flex-1">
-                  {(() => {
-                    const badgeColor = (session.type === 'workshop' && getWorkshopColor(session.title)) || typeColors[session.type];
-                    const badgeColorBg = session.type === 'workshop' && getWorkshopColor(session.title)
-                      ? getWorkshopColor(session.title)!.replace('rgb(', 'rgba(').replace(')', ', 0.1)')
-                      : `${typeColors[session.type]}15`;
-                    const badgeColorBorder = session.type === 'workshop' && getWorkshopColor(session.title)
-                      ? getWorkshopColor(session.title)!.replace('rgb(', 'rgba(').replace(')', ', 0.25)')
-                      : `${typeColors[session.type]}30`;
-                    return (
-                  <div className="flex flex-wrap items-center gap-2 mb-2">
-                    {session.track && (
-                      <span
-                        className="text-[9px] font-bold tracking-[0.2em] uppercase px-2 py-0.5 rounded"
-                        style={{
-                          background: badgeColorBg,
-                          color: badgeColor,
-                          border: `1px solid ${badgeColorBorder}`,
-                        }}
-                      >
-                        {session.track}
-                      </span>
-                    )}
+            ) : (
+              <div
+                key={i}
+                className={`session-card rounded-lg p-3 sm:p-5 md:p-6`}
+                style={(() => {
+                  const wc = session.type === 'workshop' ? getWorkshopColor(session.title) : null;
+                  const wcBg = wc ? wc.replace('rgb(', 'rgba(').replace(')', ', 0.05)') : null;
+                  const wcBorder = wc ? wc.replace('rgb(', 'rgba(').replace(')', ', 0.15)') : null;
+                  return {
+                    background: session.highlight
+                      ? 'rgba(184,134,11,0.06)'
+                      : wcBg || (session.type === 'workshop' ? '#fafaf826' : '#FFFFFF'),
+                    border: session.highlight
+                      ? '1px solid rgba(184,134,11,0.25)'
+                      : wcBorder
+                        ? `1px solid ${wcBorder}`
+                        : session.type === 'workshop'
+                          ? '1px solid rgba(107,95,189,0.2)'
+                          : '1px solid rgba(184,134,11,0.1)',
+                  };
+                })()}
+              >
+                <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4">
+                  {/* Time */}
+                  <div className="sm:min-w-[160px]">
                     <span
-                      className="text-[9px] font-bold tracking-[0.2em] uppercase px-2 py-0.5 rounded"
-                      style={{
-                        background: badgeColorBg,
-                        color: badgeColor,
-                      }}
+                      className="text-[11px] font-bold tracking-wider uppercase"
+                      style={{ color: '#9A7B20' }}
                     >
-                      {typeLabels[session.type]}
+                      {session.time}
                     </span>
                   </div>
-                    );
-                  })()}
 
-                  <h3
-                    className={`font-display font-semibold leading-snug mb-2 ${
-                      session.highlight ? 'text-xl' : 'text-base md:text-lg'
-                    }`}
-                    style={{ color: session.highlight ? '#B8860B' : '#1A1612' }}
-                  >
-                    {session.link ? (
-                      <a
-                        href={session.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline decoration-gold/40 hover:decoration-gold transition-colors"
-                      >
-                        {session.title}
-                      </a>
-                    ) : (
-                      session.title
+                  {/* Content */}
+                  <div className="flex-1">
+                    {(() => {
+                      const badgeColor =
+                        (session.type === 'workshop' && getWorkshopColor(session.title)) ||
+                        typeColors[session.type];
+                      const badgeColorBg =
+                        session.type === 'workshop' && getWorkshopColor(session.title)
+                          ? getWorkshopColor(session.title)!
+                              .replace('rgb(', 'rgba(')
+                              .replace(')', ', 0.1)')
+                          : `${typeColors[session.type]}15`;
+                      const badgeColorBorder =
+                        session.type === 'workshop' && getWorkshopColor(session.title)
+                          ? getWorkshopColor(session.title)!
+                              .replace('rgb(', 'rgba(')
+                              .replace(')', ', 0.25)')
+                          : `${typeColors[session.type]}30`;
+                      return (
+                        <div className="flex flex-wrap items-center gap-2 mb-2">
+                          {session.track && (
+                            <span
+                              className="text-[9px] font-bold tracking-[0.2em] uppercase px-2 py-0.5 rounded"
+                              style={{
+                                background: badgeColorBg,
+                                color: badgeColor,
+                                border: `1px solid ${badgeColorBorder}`,
+                              }}
+                            >
+                              {session.track}
+                            </span>
+                          )}
+                          <span
+                            className="text-[9px] font-bold tracking-[0.2em] uppercase px-2 py-0.5 rounded"
+                            style={{
+                              background: badgeColorBg,
+                              color: badgeColor,
+                            }}
+                          >
+                            {typeLabels[session.type]}
+                          </span>
+                        </div>
+                      );
+                    })()}
+
+                    <h3
+                      className={`font-display font-semibold leading-snug mb-2 ${
+                        session.highlight ? 'text-xl' : 'text-base md:text-lg'
+                      }`}
+                      style={{ color: session.highlight ? '#B8860B' : '#1A1612' }}
+                    >
+                      {session.link ? (
+                        <a
+                          href={session.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline decoration-gold/40 hover:decoration-gold transition-colors"
+                        >
+                          {session.title}
+                        </a>
+                      ) : (
+                        session.title
+                      )}
+                    </h3>
+
+                    {session.description && session.type !== 'break' && (
+                      <p className="text-sm leading-relaxed mb-3" style={{ color: '#7A6040' }}>
+                        {session.description}
+                      </p>
                     )}
-                  </h3>
 
-                  {session.description && session.type !== 'break' && (
-                    <p className="text-sm leading-relaxed mb-3" style={{ color: '#7A6040' }}>
-                      {session.description}
-                    </p>
-                  )}
-
-                  {session.speakerDetails && session.speakerDetails.length > 0 && (
-                    <SessionSpeakers speakers={session.speakerDetails} isWorkshop={session.type === 'workshop'} />
-                  )}
-
+                    {session.speakerDetails && session.speakerDetails.length > 0 && (
+                      <SessionSpeakers
+                        speakers={session.speakerDetails}
+                        isWorkshop={session.type === 'workshop'}
+                      />
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            )
+          )}
         </div>
       </div>
     </section>
