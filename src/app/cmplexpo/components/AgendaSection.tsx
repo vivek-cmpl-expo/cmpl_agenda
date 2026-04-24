@@ -374,7 +374,7 @@ const speakerPhotos: Record<string, SpeakerInfo> = {
   'SIDDHARTH RUSTAGI' : {
     name:'SIDDHARTH RUSTAGI',
     role : 'CO-FOUNDER',
-    company : 'INNOBEV',
+    company : 'Innobev Solutions Pvt. Ltd.',
     img: '/assets/members/SIDDHARTH RUSTAGI.png',
   }
 };
