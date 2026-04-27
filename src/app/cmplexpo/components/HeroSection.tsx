@@ -20,8 +20,8 @@ const slides = [
 
 const stats = [
   { label: 'Exhibitors', value: '500+', icon: '🏢' },
-  { label: 'Trade Visitors', value: '30,000+', icon: '👥' },
-  { label: 'Sessions', value: '15+', icon: '🎙' },
+  { label: 'Products On Display', value: '25,000+', icon: '👥' },
+  { label: 'Speakers', value: '60+', icon: '🎙' },
 ];
 
 export default function HeroSection() {
@@ -47,7 +47,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-end"
+      className="relative min-h-screen flex items-end overflow-hidden"
       style={{ minHeight: '100vh' }}
       aria-label="CMPL Expo 2026 Hero"
     >
@@ -70,7 +70,7 @@ export default function HeroSection() {
           className="absolute inset-0 z-10"
           style={{
             background:
-              'linear-gradient(to top, rgba(0,0,0,0.97) 0%, rgba(0,0,0,0.82) 40%, rgba(0,0,0,0.55) 70%, rgba(0,0,0,0.30) 100%)',
+              'linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.55) 40%, rgba(0,0,0,0.30) 70%, rgba(0,0,0,0.15) 100%)',
           }}
         />
 
@@ -85,11 +85,11 @@ export default function HeroSection() {
       </div>
 
       {/* Main content */}
-      <div className="relative z-20 w-full pb-0 pt-20 md:pt-0">
+      <div className="relative z-20 w-full pb-0 pt-16 md:pt-0">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-12 items-end gap-0">
             {/* Left: Headline */}
-            <div className="col-span-1 md:col-span-8 pb-8 md:pb-16">
+            <div className="col-span-1 md:col-span-8 pb-6 md:pb-16">
               {/* Badge - inline in content flow */}
               {/* <div className="mb-5">
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border text-[10px] font-semibold tracking-[0.2em] uppercase"
@@ -184,16 +184,16 @@ export default function HeroSection() {
               className="col-span-1 md:col-span-4 border-t md:border-t-0 md:border-l spotlight-group"
               style={{ borderColor: 'rgba(184,134,11,0.25)' }}
             >
-              <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1">
+              <div className="grid grid-cols-3 md:grid-cols-1">
                 {stats?.map((stat, i) => (
                   <div
                     key={stat?.label}
                     className={`spotlight-card p-3 sm:p-4 md:p-8 flex flex-col justify-center ${
-                      i < stats?.length - 1 ? 'border-b sm:border-b-0 sm:border-r md:border-r-0 md:border-b' : ''
+                      i < stats?.length - 1 ? 'border-r md:border-r-0 md:border-b' : ''
                     }`}
                     style={{
                       borderColor: 'rgba(184,134,11,0.18)',
-                      background: 'rgba(0,0,0,0.55)',
+                      background: 'rgba(0,0,0,0.35)',
                       backdropFilter: 'blur(8px)',
                     }}
                   >

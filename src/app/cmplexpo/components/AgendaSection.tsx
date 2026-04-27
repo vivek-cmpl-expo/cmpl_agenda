@@ -269,8 +269,8 @@ const speakerPhotos: Record<string, SpeakerInfo> = {
     company: 'Plush',
     img: '/assets/members/KETAN MUNOTH .png',
   },
-  'Udit (Alok) Birla': {
-    name: 'Udit (Alok) Birla',
+  'Udit Birla': {
+    name: 'Udit Birla',
     role: 'Promoter',
     company: 'Swara Baby Products Pvt Ltd',
     img: '/assets/members/UDIT (ALOK) BIRLA.png',
@@ -383,6 +383,24 @@ const speakerPhotos: Record<string, SpeakerInfo> = {
     company: 'RELIANCE RETAIL',
     img: '/assets/members/AMIT KALE.png',
   },
+  'Vilas Shirhatti':{
+    name:'DR. VILAS SHIRHATTI',
+    role: 'PRINCIPAL ADVISOR – TECHNOLOGY',
+    company:'ZYDUS WELLNESS',
+    img: '/assets/members/DR. VILAS SHIRHATTI.png',
+  },
+   'HEMENDRA MHATRE':{
+    name:'HEMENDRA MHATRE',
+    role: 'ZONAL MANAGER (MAHARASHTRA & GUJARAT)',
+    company:'WALMART VRIDDHI AND I2I FOUNDATION',
+    img: '/assets/members/HEMENDRA MHATRE.png',
+  },
+   'MILIND BARAPATRE':{
+    name:'MILIND BARAPATRE',
+    role: 'JOINT DIRECTOR & HEAD OF OFFICE',
+    company:'MSME DEVELOPMENT & FACILITATION OFFICE',
+    img: '/assets/members/MILIND BARAPATRE.png',
+  },
 };
 
 const agenda: Record<string, { date: string; sessions: Session[] }> = {
@@ -392,7 +410,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
       {
         time: '10:30 AM – 11:30 AM',
         type: 'event',
-        title: 'Inauguration and Keynote',
+        title: 'Inauguration & Welcome Address by Sunny Leone',
         description:
           "The official opening of CMPL Expo 2026 - Asia's largest Contract Manufacturing & Private Label platform. Join us for a landmark inauguration ceremony.",
         highlight: true,
@@ -401,12 +419,11 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
       {
         time: '12:00 PM – 1:00 PM',
         type: 'session',
-        track: 'Women Founders Panel Discussion',
+        track: "Women Entrepreneurs' Panel",
         title: 'Owning the Narrative: Building Brands, Becoming the Brand',
         description:
-          'Attention can launch a brand. Authority builds an enterprise. This session examines how founders turn visibility into a scalable business - whether they started with an audience or built one along the way.',
+          "Attention can launch a brand. Authority builds an enterprise. At CMPL EXPO 2026's SPEAQ Knowledge Series, this session examines how founders turn visibility into a scalable business-whether they started with an audience or built one along the way.",
         speakerDetails: [
-          speakerPhotos['Varun Varma'],
           speakerPhotos['Carina Chopra'],
           speakerPhotos['Sunny Leone'],
           speakerPhotos['Naiyya Saggi'],
@@ -418,7 +435,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
       {
         time: '12:00 PM – 2:00 PM',
         type: 'workshop',
-        track: 'BPC Workshop',
+        track: 'Paid Workshop',
         title: 'Banawat - BPC Workshop',
         link: 'https://workshops.cmplexpo.com/banawat-workshop',
         description:
@@ -442,6 +459,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         description:
           "India has long understood what works. The challenge now is proving it, protecting it, and positioning it for a global consumer who expects both clinical rigour and cultural authenticity. This session explores how founders can combine India's formulation heritage with advanced biotech actives while maintaining scientific credibility.",
         speakerDetails: [
+          speakerPhotos['Varun Varma'],
           speakerPhotos['Harini Sivakumar'],
           speakerPhotos['Karishma Kewalramani'],
           speakerPhotos['Pearl Shah'],
@@ -452,7 +470,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
       {
         time: '2:45 PM – 4:15 PM',
         type: 'workshop',
-        track: 'F&B Workshop',
+        track: 'Paid Workshop',
         title: 'Savore - F&B Workshop',
         link: 'https://workshops.cmplexpo.com/savore-workshop',
         description:
@@ -466,23 +484,23 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
       {
         time: '3:45 PM – 4:30 PM',
         type: 'session',
-        track: 'R&D',
+        track: 'Research & Development',
         title: 'Reformulate or Be Replaced: The Science, Pressure & Strategy Behind Modern FMCG',
         description:
           "Reformulation is no longer damage control - it's a core R&D strategy. As regulators tighten scrutiny and pressures from ingredient bans, commodity volatility, and clean label demands grow, brands must rebuild formulations without compromising efficacy or trust. This session explores how R&D leaders are turning reformulation into a competitive advantage.",
         speakerDetails: [
           speakerPhotos['Dr. Prabodh Halde'],
-          speakerPhotos['Dr. Reena Bibals'],
           speakerPhotos['Rinka Banerjee'],
+          speakerPhotos['Vilas Shirhatti']
         ],
       },
       {
         time: '4:30 PM – 6:30 PM',
         type: 'event',
-        track: 'Exclusive',
+        track: 'By Invite Only',
         title: 'An Exclusive Food Founders Meetup - Mumbai',
         description:
-          "Exclusively for F&B founders happening in collaboration with Equinox Lab. An exclusive, invite-only gathering for F&B founders to connect, share insights, and build meaningful partnerships. Curated conversations in a relaxed setting - no pitches, just real talk between people building India's food future.",
+          "Exclusively for F&B founders happening in collaboration with Equinox Lab. An exclusive gathering for F&B founders to connect, share insights, and build meaningful partnerships. Curated conversations in a relaxed setting - no pitches, just real talk between people building India's food future.",
       },
       {
         time: '6:30 PM Onwards',
@@ -515,7 +533,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         title: 'Driving Growth of Food Startups and MSMEs',
         description:
           'A focused session on accelerating growth for food startups and MSMEs, presented by the Chamber for Advancement of Small and Medium Businesses.',
-        speakerDetails: [speakerPhotos['Nilesh Lele'], speakerPhotos['Yash Rajani']],
+        speakerDetails: [speakerPhotos['Nilesh Lele'],speakerPhotos['MILIND BARAPATRE'], speakerPhotos['Yash Rajani'], speakerPhotos['HEMENDRA MHATRE']],
       },
       {
         time: '11:30 AM – 12:15 PM',
@@ -536,7 +554,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
       {
         time: '12:15 PM – 2:15 PM',
         type: 'workshop',
-        track: 'Packaging Workshop',
+        track: 'Paid Workshop',
         title: 'Unpack - Packaging Workshop',
         link: 'https://workshops.cmplexpo.com/unpack-workshop',
         description:
@@ -554,7 +572,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
           speakerPhotos['Varun Varma'],
           speakerPhotos['Surbhi Bafna'],
           speakerPhotos['Ketan Munoth'],
-          speakerPhotos['Udit (Alok) Birla'],
+          speakerPhotos['Udit Birla'],
           speakerPhotos['Kaushik Johari'],
           speakerPhotos['Sunil Lewis'],
         ],
@@ -582,9 +600,9 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
           'An initiative in collaboration with UNIMO - Universe of Moms, this walkthrough is designed to support and empower women building brands alongside motherhood. It offers a focused platform to explore the CMPL ecosystem, discover the right partners, gain actionable insights, and accelerate their entrepreneurial journey - while connecting with a community that truly understands and champions their path.',
         speakerDetails: [
           {
-            name: 'UNIMO',
-            role: 'Universe of Moms',
-            company: 'In collaboration with',
+            name: 'In collaboration with',
+            role: 'UNIMO',
+            company: 'Universe of Moms',
             img: '/assets/logo/MUMO_Logo.ai.png',
           },
         ],
@@ -607,11 +625,11 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
       {
         time: '3:00 PM – 4:30 PM',
         type: 'workshop',
-        track: 'Workshop',
-        title: 'Launch Pad Workshop',
+        track: 'Paid Workshop',
+        title: 'Launchpad Workshop',
         link: 'https://workshops.cmplexpo.com/launchpad-workshop',
         description:
-          "You've built the product. Now put it on shelves the world over. This workshop covers omnichannel distribution strategy, export readiness, and how to scale your brand across modern trade, e-commerce, and international markets.",
+          "You've built the product. Now put it on shelves the world over. This workshop covers omnichannel distribution strategy, export readiness, and how to scale your brand across modern trade, e-commerce, and international markets. Workshop partner: Alibaba.com.",
         speakerDetails: [speakerPhotos['Binamra Dash']],
       },
       {
@@ -674,7 +692,7 @@ const workshopColors: Record<string, string> = {
   Banawat: 'rgb(124, 58, 237)',
   Savore: 'rgb(22, 163, 74)',
   Unpack: 'rgb(146, 64, 14)',
-  'Launch Pad': 'rgb(37, 99, 235)',
+  Launchpad: 'rgb(37, 99, 235)',
 };
 
 function getWorkshopColor(title: string): string | null {
@@ -715,20 +733,20 @@ function SessionSpeakers({
             />
           </div>
           <div className="min-w-0">
-            <p className="text-expo-fg text-[11px] sm:text-xs font-semibold leading-tight  max-w-[100px] sm:max-w-[140px]">
-              {spk.name}
+            <p className="text-expo-fg text-[11px] sm:text-xs font-semibold leading-tight capitalize max-w-[100px] sm:max-w-[140px]">
+              {spk.name.toLowerCase()}
             </p>
             <p
-              className="text-[10px] sm:text-xs leading-tight  max-w-[100px] sm:max-w-[140px]"
+              className="text-[10px] sm:text-xs leading-tight capitalize max-w-[100px] sm:max-w-[140px]"
               style={{ color: '#7A6040' }}
             >
-              {spk.role}
+              {spk.role.toLowerCase()}
             </p>
             <p
-              className="text-[9px] sm:text-[10px] leading-tight  max-w-[100px] sm:max-w-[140px]"
+              className="text-[11px] sm:text-xs leading-tight capitalize max-w-[100px] sm:max-w-[140px]"
               style={{ color: '#B8860B' }}
             >
-              {spk.company}
+              {spk.company.toLowerCase()}
             </p>
           </div>
         </div>
@@ -895,6 +913,7 @@ export default function AgendaSection() {
                             style={{
                               background: badgeColorBg,
                               color: badgeColor,
+                              border: `1px solid ${badgeColorBorder}`,
                             }}
                           >
                             {typeLabels[session.type]}

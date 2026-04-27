@@ -23,9 +23,12 @@ const AppLogo = memo(function AppLogo({
   const containerClassName = useMemo(() => {
     const classes = ['flex items-center'];
     if (onClick) classes.push('cursor-pointer hover:opacity-80 transition-opacity');
-    if (className) classes.push(className);
     return classes.join(' ');
-  }, [onClick, className]);
+  }, [onClick]);
+
+  const imageClassName = useMemo(() => {
+    return ['flex-shrink-0', className].filter(Boolean).join(' ');
+  }, [className]);
 
   return (
     <div className={containerClassName} onClick={onClick}>
@@ -33,15 +36,15 @@ const AppLogo = memo(function AppLogo({
       {src ? (
         <AppImage
           src={src}
-          alt="Logo" 
+          alt="Logo"
           width={size}
           height={size}
-          className="flex-shrink-0"
+          className={imageClassName}
           priority={true}
           unoptimized={src.endsWith('.svg')}
         />
       ) : (
-        <AppIcon name={iconName} size={size} className="flex-shrink-0" />
+        <AppIcon name={iconName} size={size} className={imageClassName} />
       )}
     </div>
   );

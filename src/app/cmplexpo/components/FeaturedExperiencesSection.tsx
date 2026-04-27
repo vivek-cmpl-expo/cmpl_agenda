@@ -4,7 +4,7 @@ import AppImage from '@/components/ui/AppImage';
 const experiences = [
   {
     title: 'SPEAQ Knowledge Series',
-    subtitle: '15+ Expert-Led Sessions',
+    subtitle: '60+ Speakers',
     description:
       'Women Founders Panel · Trend Talks · BPC Deep Dive · R&D Strategy · Packaging · F&B · Winning the Consumer',
     img: '/assets/banner/speaq.jpg',

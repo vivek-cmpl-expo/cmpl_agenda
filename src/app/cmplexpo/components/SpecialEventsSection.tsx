@@ -34,7 +34,7 @@ const events = [
     description:
       'An exclusive gathering for food & beverage founders. In collaboration with Equinox Labs and the Food Founders Ecosystem.',
     cta: 'Request Invite',
-    link: 'mailto:akanksha@cmplexpo.com',
+    link: 'mailto:akanksha@cmplexpo.com',   
     img: '/assets/banner/FOOD FOUNDERS-BG.webp',
     alt: 'Small group of food entrepreneurs networking around a table in a warm well-lit private dining setting',
     accentColor: '#2E7DB8',
@@ -72,7 +72,7 @@ export default function SpecialEventsSection() {
           {/* Pitch Day - wide */}
           <div
             className="lg:col-span-2 experience-card rounded-lg overflow-hidden relative scroll-reveal"
-            style={{ minHeight: '360px', border: '1px solid rgba(184,134,11,0.2)' }}
+            style={{ minHeight: '500px', border: '1px solid rgba(184,134,11,0.2)' }}
           >
             <AppImage
               src={events?.[0]?.img}
@@ -90,7 +90,7 @@ export default function SpecialEventsSection() {
               }}
             />
 
-            <div className="absolute inset-0 p-4 sm:p-8 md:p-10 flex flex-col justify-end z-10">
+            <div className="absolute inset-0 p-4 sm:p-8 md:p-10 flex flex-col justify-start z-10">
               <span
                 className="text-[9px] font-bold tracking-[0.25em] uppercase px-3 py-1.5 rounded-full self-start mb-4"
                 style={{
@@ -134,7 +134,7 @@ export default function SpecialEventsSection() {
               <div
                 key={event?.title}
                 className={`experience-card rounded-lg overflow-hidden relative flex-1 scroll-reveal delay-${i + 1}`}
-                style={{ minHeight: '150px', border: `1px solid ${event?.accentColor}25` }}
+                style={{ minHeight: '240px', border: `1px solid ${event?.accentColor}25` }}
               >
                 <AppImage
                   src={event?.img}
@@ -148,13 +148,13 @@ export default function SpecialEventsSection() {
                   className="absolute inset-0"
                   style={{
                     background:
-                      'linear-gradient(to right, rgba(10,8,6,0.65) 0%, rgba(10,8,6,0.35) 100%)',
+                      'linear-gradient(135deg, rgba(10,8,6,0.88) 0%, rgba(10,8,6,0.55) 60%, rgba(10,8,6,0.35) 100%)',
                   }}
                 />
 
-                <div className="absolute inset-0 p-6 flex flex-col justify-end z-10">
+                <div className="absolute inset-0 p-4 sm:p-8 md:p-10 flex flex-col justify-start gap-3 z-10">
                   <span
-                    className="text-[9px] font-bold tracking-[0.2em] uppercase px-2 py-1 rounded-full self-start mb-2"
+                    className="text-[10px] font-bold tracking-[0.25em] uppercase px-3 py-1.5 rounded-full self-start"
                     style={{
                       background: `${event?.accentColor}20`,
                       color: event?.accentColor,
@@ -163,11 +163,11 @@ export default function SpecialEventsSection() {
                   >
                     {event?.tag}
                   </span>
-                  <p className="text-xs mb-1" style={{ color: 'rgba(255,255,255,0.65)' }}>
+                  <p className="text-sm" style={{ color: 'rgba(255,255,255,0.7)' }}>
                     {event?.subtitle}
                   </p>
                   <h3
-                    className="font-display font-semibold text-lg mb-2"
+                    className="font-display font-bold text-xl sm:text-2xl leading-tight"
                     style={{ color: '#FFFFFF' }}
                   >
                     {event?.title}

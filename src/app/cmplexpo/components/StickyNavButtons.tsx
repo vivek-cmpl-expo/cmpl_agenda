@@ -37,7 +37,7 @@ export default function StickyNavButtons() {
   };
 
   return (
-    <div className="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-2 hidden md:flex">
+    <div className="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-1.5 sm:gap-2">
       {buttons.map((btn) => (
         <a
           key={btn.label}
@@ -45,7 +45,7 @@ export default function StickyNavButtons() {
           target={btn.external ? '_blank' : undefined}
           rel={btn.external ? 'noopener noreferrer' : undefined}
           onClick={(e) => handleClick(e, btn.href, btn.external)}
-          className="group flex items-center justify-center cursor-pointer select-none"
+          className="sticky-nav-btn group flex items-center justify-center cursor-pointer select-none"
           style={{
             writingMode: 'vertical-rl',
             textOrientation: 'mixed',
@@ -53,10 +53,8 @@ export default function StickyNavButtons() {
             backgroundColor: btn.bg,
             color: '#FFFFFF',
             fontWeight: 700,
-            fontSize: '13px',
             letterSpacing: '0.12em',
             textTransform: 'uppercase',
-            padding: '14px 10px',
             borderRadius: '6px 0 0 6px',
             boxShadow: '-2px 2px 8px rgba(0,0,0,0.25)',
             transition: 'background-color 0.2s ease, padding-right 0.2s ease',
@@ -65,16 +63,26 @@ export default function StickyNavButtons() {
           }}
           onMouseEnter={(e) => {
             (e.currentTarget as HTMLElement).style.backgroundColor = btn.hoverBg;
-            (e.currentTarget as HTMLElement).style.paddingRight = '14px';
           }}
           onMouseLeave={(e) => {
             (e.currentTarget as HTMLElement).style.backgroundColor = btn.bg;
-            (e.currentTarget as HTMLElement).style.paddingRight = '10px';
           }}
         >
           {btn.label}
         </a>
       ))}
+      <style jsx>{`
+        .sticky-nav-btn {
+          font-size: 10px;
+          padding: 10px 6px;
+        }
+        @media (min-width: 640px) {
+          .sticky-nav-btn {
+            font-size: 13px;
+            padding: 14px 10px;
+          }
+        }
+      `}</style>
     </div>
   );
 }

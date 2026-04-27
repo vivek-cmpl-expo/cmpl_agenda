@@ -70,10 +70,10 @@ export default function Header() {
           borderColor: 'rgba(184, 134, 11, 0.15)',
         }}
       >
-        <div className="max-w-[1440px] mx-auto px-4 md:px-12 flex items-center justify-between">
+        <div className="max-w-[1440px] mx-auto px-3 md:px-12 flex items-center justify-between gap-2">
           {/* Logo */}
-          <a href="https://cmplexpo.com/" target="_blank" rel="noopener noreferrer" className="flex items-center group">
-            <AppLogo src="/assets/logo/Logo-m26.jpg" size={400} className="h-10 sm:h-14 md:h-20 lg:h-32 w-auto" />
+          <a href="https://cmplexpo.com/" target="_blank" rel="noopener noreferrer" className="flex items-center group flex-shrink min-w-0">
+            <AppLogo src="/assets/logo/Logo-m26.jpg" size={400} className="h-7 sm:h-10 md:h-20 lg:h-32 w-auto max-w-full" />
           </a>
 
           {/* Desktop Nav */}
@@ -106,7 +106,7 @@ export default function Header() {
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden"
+            className="md:hidden flex-shrink-0"
             style={{ color: '#1A1612' }}
             onClick={() => setMenuOpen(true)}
             aria-label="Open menu"

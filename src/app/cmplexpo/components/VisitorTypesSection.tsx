@@ -73,8 +73,8 @@ export default function VisitorTypesSection() {
         >
           {[
             { value: '500+', label: 'Exhibitors' },
-            { value: '30,000+', label: 'Trade Visitors' },
-            { value: '15+', label: 'SPEAQ Sessions' },
+            { value: '25,000+', label: 'Products On Display' },
+            { value: '60+', label: 'Speakers' },
             { value: '50+', label: 'Disruptors Awards' },
           ]?.map((stat) => (
             <div
