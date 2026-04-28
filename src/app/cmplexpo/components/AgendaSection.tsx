@@ -545,7 +545,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         title: 'Driving Growth of Food Startups and MSMEs',
         description:
           'A focused session on accelerating growth for food startups and MSMEs, presented by the Chamber for Advancement of Small and Medium Businesses.',
-        speakerDetails: [speakerPhotos['Nilesh Lele'],speakerPhotos['MILIND BARAPATRE'], speakerPhotos['Yash Rajani'], speakerPhotos['HEMENDRA MHATRE']],
+        speakerDetails: [speakerPhotos['Nilesh Lele'],speakerPhotos['MILIND BARAPATRE'], speakerPhotos['Yash Rajani'], speakerPhotos['HEMENDRA MHATRE'],speakerPhotos['AMOL CHIDRAWAR']],
       },
       {
         time: '11:30 AM – 12:15 PM',
