@@ -407,6 +407,12 @@ const speakerPhotos: Record<string, SpeakerInfo> = {
     company:'FOOD STRONG',
     img: '/assets/members/KARISHMA BHALLA.png',
   },
+   'AMOL CHIDRAWAR':{
+    name:'AMOL CHIDRAWAR',
+    role: 'STATE PROJECT LEAD MANAGER ',
+    company:'PRADHAN MANTRI FORMALISATION OF MICRO FOOD PROCESSING ENTERPRISES (PMFME) SCHEME.',
+    img: '/assets/members/AMOL CHIDRAWAR.png',
+  },
 };
 
 const agenda: Record<string, { date: string; sessions: Session[] }> = {
