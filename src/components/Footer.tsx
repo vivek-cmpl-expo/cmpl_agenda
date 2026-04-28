@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center md:items-center justify-between gap-4 md:gap-8 text-center md:text-left">
           {/* Left: Logo */}
           <a href="https://cmplexpo.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
-            <AppLogo src="/assets/logo/Logo-m26.jpg" size={400} className="h-10 sm:h-14 md:h-20 lg:h-32 w-auto" />
+            <AppLogo src="/assets/logo/Logo-m26.jpg" size={400} className="h-10 sm:h-14 md:h-14 lg:h-[88px] w-auto" />
           </a>
 
           {/* Center: Links */}

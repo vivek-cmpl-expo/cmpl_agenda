@@ -401,6 +401,12 @@ const speakerPhotos: Record<string, SpeakerInfo> = {
     company:'MSME DEVELOPMENT & FACILITATION OFFICE',
     img: '/assets/members/MILIND BARAPATRE.png',
   },
+   'KARISHMA BHALLA':{
+    name:'KARISHMA BHALLA',
+    role: 'FOUNDER AND DIRECTOR ',
+    company:'FOOD STRONG',
+    img: '/assets/members/KARISHMA BHALLA.png',
+  },
 };
 
 const agenda: Record<string, { date: string; sessions: Session[] }> = {
@@ -590,6 +596,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
           speakerPhotos['Kinnari Gosrani Shah'],
           speakerPhotos['Varun Kapur'],
           speakerPhotos['Vinay Maheshwari'],
+          speakerPhotos['KARISHMA BHALLA']
         ],
       },
       {

@@ -73,7 +73,7 @@ export default function Header() {
         <div className="max-w-[1440px] mx-auto px-3 md:px-12 flex items-center justify-between gap-2">
           {/* Logo */}
           <a href="https://cmplexpo.com/" target="_blank" rel="noopener noreferrer" className="flex items-center group flex-shrink min-w-0">
-            <AppLogo src="/assets/logo/Logo-m26.jpg" size={400} className="h-7 sm:h-10 md:h-20 lg:h-32 w-auto max-w-full" />
+            <AppLogo src="/assets/logo/Logo-m26.jpg" size={400} className="h-14 sm:h-20 md:h-14 lg:h-[88px] w-auto max-w-full" />
           </a>
 
           {/* Desktop Nav */}

@@ -18,6 +18,13 @@ const buttons = [
     external: true,
   },
   {
+    label: 'ShowGuide',
+    href: 'https://showguide.cmplexpo.com/',
+    bg: '#9B5BA1',
+    hoverBg: '#7E467F',
+    external: true,
+  },
+  {
     label: 'Register to Visit',
     href: 'https://cmpl.world/',
     bg: '#3A9A3A',
@@ -55,7 +62,7 @@ export default function StickyNavButtons() {
             fontWeight: 700,
             letterSpacing: '0.12em',
             textTransform: 'uppercase',
-            borderRadius: '6px 0 0 6px',
+            borderRadius: '0 6px 6px 0',
             boxShadow: '-2px 2px 8px rgba(0,0,0,0.25)',
             transition: 'background-color 0.2s ease, padding-right 0.2s ease',
             textDecoration: 'none',

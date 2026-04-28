@@ -7,14 +7,17 @@ const slides = [
   {
     src: '/assets/banner/_A742174.jpg',
     alt: 'CMPL Expo convention hall and exhibition',
+    objectPosition: 'center',
   },
   {
     src: '/assets/banner/banner.jpg',
     alt: 'CMPL Expo event and networking',
+    objectPosition: 'center',
   },
   {
     src: '/assets/banner/DJI_20250709155927_0042_DE-edited.jpg',
     alt: 'CMPL Expo aerial view of venue',
+    objectPosition: 'center',
   },
 ];
 
@@ -61,6 +64,7 @@ export default function HeroSection() {
               fill
               priority={i === 0}
               className="object-cover"
+              style={{ objectPosition: slide?.objectPosition || 'center' }}
               sizes="100vw"
             />
           </div>
