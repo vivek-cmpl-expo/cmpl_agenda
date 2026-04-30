@@ -157,7 +157,7 @@ const speakerPhotos: Record<string, SpeakerInfo> = {
   },
   'Pearl Shah': {
     name: 'Pearl Shah',
-    role: 'VP Marketing, Owned Brands',
+    role: 'Sr Vice President Owned Brands',
     company: 'Nykaa',
     img: '/assets/members/PEARL SHAH.png',
   },
@@ -431,6 +431,12 @@ const speakerPhotos: Record<string, SpeakerInfo> = {
     company: 'PROLICIOUS',
     img: '/assets/members/JUHI SINGH.png',
   },
+  'GEETANJALI VATS': {
+    name: 'GEETANJALI VATS',
+    role: 'GLOBAL PLASTICS SUSTAINABILITY- ASIA & ANZ LEAD',
+    company: 'UNILEVER',
+    img: '/assets/members/GEETANJALI VATS.png',
+  },
 };
 
 const agenda: Record<string, { date: string; sessions: Session[] }> = {
@@ -524,6 +530,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
           speakerPhotos['Vilas Shirhatti'],
           speakerPhotos['DR. SONAL SHIDHORE'],
           speakerPhotos['JUHI SINGH'],
+          speakerPhotos['GEETANJALI VATS']
         ],
       },
       {
