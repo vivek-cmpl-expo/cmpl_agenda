@@ -419,6 +419,12 @@ const speakerPhotos: Record<string, SpeakerInfo> = {
     company:'SAUCE.VC',
     img: '/assets/members/ZOEB ALI KHAN.png',
   },
+  'DR. SONAL SHIDHORE':{
+    name:'DR. SONAL SHIDHORE',
+    role: 'INDEPENDENT REGULATORY CONSULTANT, ADVISOR & TRAINER',
+    company:'',
+    img: '/assets/members/DR. SONAL SHIDHORE.png',
+  },
 };
 
 const agenda: Record<string, { date: string; sessions: Session[] }> = {
@@ -509,7 +515,8 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         speakerDetails: [
           speakerPhotos['Dr. Prabodh Halde'],
           speakerPhotos['Rinka Banerjee'],
-          speakerPhotos['Vilas Shirhatti']
+          speakerPhotos['Vilas Shirhatti'],
+          speakerPhotos['DR. SONAL SHIDHORE']
         ],
       },
       {
