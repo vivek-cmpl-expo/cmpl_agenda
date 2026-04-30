@@ -383,47 +383,53 @@ const speakerPhotos: Record<string, SpeakerInfo> = {
     company: 'RELIANCE RETAIL',
     img: '/assets/members/AMIT KALE.png',
   },
-  'Vilas Shirhatti':{
-    name:'DR. VILAS SHIRHATTI',
+  'Vilas Shirhatti': {
+    name: 'DR. VILAS SHIRHATTI',
     role: 'PRINCIPAL ADVISOR – TECHNOLOGY',
-    company:'ZYDUS WELLNESS',
+    company: 'ZYDUS WELLNESS',
     img: '/assets/members/DR. VILAS SHIRHATTI.png',
   },
-   'HEMENDRA MHATRE':{
-    name:'HEMENDRA MHATRE',
+  'HEMENDRA MHATRE': {
+    name: 'HEMENDRA MHATRE',
     role: 'ZONAL MANAGER (MAHARASHTRA & GUJARAT)',
-    company:'WALMART VRIDDHI AND I2I FOUNDATION',
+    company: 'WALMART VRIDDHI AND I2I FOUNDATION',
     img: '/assets/members/HEMENDRA MHATRE.png',
   },
-   'MILIND BARAPATRE':{
-    name:'MILIND BARAPATRE',
+  'MILIND BARAPATRE': {
+    name: 'MILIND BARAPATRE',
     role: 'JOINT DIRECTOR & HEAD OF OFFICE',
-    company:'MSME DEVELOPMENT & FACILITATION OFFICE',
+    company: 'MSME DEVELOPMENT & FACILITATION OFFICE',
     img: '/assets/members/MILIND BARAPATRE.png',
   },
-   'KARISHMA BHALLA':{
-    name:'KARISHMA BHALLA',
+  'KARISHMA BHALLA': {
+    name: 'KARISHMA BHALLA',
     role: 'FOUNDER AND DIRECTOR ',
-    company:'FOOD STRONG',
+    company: 'FOOD STRONG',
     img: '/assets/members/KARISHMA BHALLA.png',
   },
-   'AMOL CHIDRAWAR':{
-    name:'AMOL CHIDRAWAR',
+  'AMOL CHIDRAWAR': {
+    name: 'AMOL CHIDRAWAR',
     role: 'STATE PROJECT LEAD MANAGER ',
-    company:'PRADHAN MANTRI FORMALISATION OF MICRO FOOD PROCESSING ENTERPRISES (PMFME) SCHEME.',
+    company: 'PRADHAN MANTRI FORMALISATION OF MICRO FOOD PROCESSING ENTERPRISES (PMFME) SCHEME.',
     img: '/assets/members/AMOL CHIDRAWAR.png',
   },
-  'ZOEB ALI KHAN':{
-    name:'ZOEB ALI KHAN',
+  'ZOEB ALI KHAN': {
+    name: 'ZOEB ALI KHAN',
     role: 'VICE PRESIDENT ',
-    company:'SAUCE.VC',
+    company: 'SAUCE.VC',
     img: '/assets/members/ZOEB ALI KHAN.png',
   },
-  'DR. SONAL SHIDHORE':{
-    name:'DR. SONAL SHIDHORE',
+  'DR. SONAL SHIDHORE': {
+    name: 'DR. SONAL SHIDHORE',
     role: 'INDEPENDENT REGULATORY CONSULTANT, ADVISOR & TRAINER',
-    company:'',
+    company: '',
     img: '/assets/members/DR. SONAL SHIDHORE.png',
+  },
+  'JUHI SINGH': {
+    name: 'JUHI SINGH',
+    role: 'CHIEF BUSINESS OFFICER',
+    company: 'PROLICIOUS',
+    img: '/assets/members/JUHI SINGH.png',
   },
 };
 
@@ -516,7 +522,8 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
           speakerPhotos['Dr. Prabodh Halde'],
           speakerPhotos['Rinka Banerjee'],
           speakerPhotos['Vilas Shirhatti'],
-          speakerPhotos['DR. SONAL SHIDHORE']
+          speakerPhotos['DR. SONAL SHIDHORE'],
+          speakerPhotos['JUHI SINGH'],
         ],
       },
       {
@@ -558,7 +565,13 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
         title: 'Driving Growth of Food Startups and MSMEs',
         description:
           'A focused session on accelerating growth for food startups and MSMEs, presented by the Chamber for Advancement of Small and Medium Businesses.',
-        speakerDetails: [speakerPhotos['Nilesh Lele'],speakerPhotos['MILIND BARAPATRE'], speakerPhotos['Yash Rajani'], speakerPhotos['HEMENDRA MHATRE'],speakerPhotos['AMOL CHIDRAWAR']],
+        speakerDetails: [
+          speakerPhotos['Nilesh Lele'],
+          speakerPhotos['MILIND BARAPATRE'],
+          speakerPhotos['Yash Rajani'],
+          speakerPhotos['HEMENDRA MHATRE'],
+          speakerPhotos['AMOL CHIDRAWAR'],
+        ],
       },
       {
         time: '11:30 AM – 12:15 PM',
@@ -615,7 +628,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
           speakerPhotos['Kinnari Gosrani Shah'],
           speakerPhotos['Varun Kapur'],
           speakerPhotos['Vinay Maheshwari'],
-          speakerPhotos['KARISHMA BHALLA']
+          speakerPhotos['KARISHMA BHALLA'],
         ],
       },
       {
@@ -694,7 +707,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
           speakerPhotos['Abhiram Bhalerao'],
           speakerPhotos['Saptarishi Sen'],
           speakerPhotos['Ashim Jolly'],
-          speakerPhotos['ZOEB ALI KHAN']
+          speakerPhotos['ZOEB ALI KHAN'],
         ],
       },
     ],
