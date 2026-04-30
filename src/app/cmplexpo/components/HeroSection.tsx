@@ -11,6 +11,7 @@ const slides = [
   },
   {
     src: '/assets/banner/banner.jpg',
+    mobileSrc: '/assets/banner/_IXO1384-v.jpg',
     alt: 'CMPL Expo event and networking',
     objectPosition: 'center',
   },
@@ -56,17 +57,44 @@ export default function HeroSection() {
     >
       {/* Carousel */}
       <div className="absolute inset-0 z-0">
-        {slides?.map((slide, i) => (
+        {slides?.map((slide: any, i) => (
           <div key={i} className={`carousel-slide ${i === currentSlide ? 'active' : ''}`}>
-            <AppImage
-              src={slide?.src}
-              alt={slide?.alt}
-              fill
-              priority={i === 0}
-              className="object-cover"
-              style={{ objectPosition: slide?.objectPosition || 'center' }}
-              sizes="100vw"
-            />
+            {slide?.mobileSrc ? (
+              <>
+                <div className="hidden sm:block absolute inset-0">
+                  <AppImage
+                    src={slide?.src}
+                    alt={slide?.alt}
+                    fill
+                    priority={i === 0}
+                    className="object-cover"
+                    style={{ objectPosition: slide?.objectPosition || 'center' }}
+                    sizes="100vw"
+                  />
+                </div>
+                <div className="block sm:hidden absolute inset-0">
+                  <AppImage
+                    src={slide?.mobileSrc}
+                    alt={slide?.alt}
+                    fill
+                    priority={i === 0}
+                    className="object-cover"
+                    style={{ objectPosition: slide?.objectPosition || 'center' }}
+                    sizes="100vw"
+                  />
+                </div>
+              </>
+            ) : (
+              <AppImage
+                src={slide?.src}
+                alt={slide?.alt}
+                fill
+                priority={i === 0}
+                className="object-cover"
+                style={{ objectPosition: slide?.objectPosition || 'center' }}
+                sizes="100vw"
+              />
+            )}
           </div>
         ))}
         {/* Dark scrim - black overlay from bottom */}
