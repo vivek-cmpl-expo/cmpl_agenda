@@ -13,6 +13,7 @@ import VisitorTypesSection from './cmplexpo/components/VisitorTypesSection';
 import FooterCTASection from './cmplexpo/components/FooterCTASection';
 import ScrollController from './cmplexpo/components/ScrollController';
 import StickyNavButtons from './cmplexpo/components/StickyNavButtons';
+import StickyBottomBanner from './cmplexpo/components/StickyBottomBanner';
 
 export default function HomePage() {
   return (
@@ -37,6 +38,7 @@ export default function HomePage() {
       <Footer />
       <ScrollController />
       <StickyNavButtons />
+      <StickyBottomBanner />
     </main>
   );
 }
