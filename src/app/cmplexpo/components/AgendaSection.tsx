@@ -413,6 +413,12 @@ const speakerPhotos: Record<string, SpeakerInfo> = {
     company:'PRADHAN MANTRI FORMALISATION OF MICRO FOOD PROCESSING ENTERPRISES (PMFME) SCHEME.',
     img: '/assets/members/AMOL CHIDRAWAR.png',
   },
+  'ZOEB ALI KHAN':{
+    name:'ZOEB ALI KHAN',
+    role: 'VICE PRESIDENT ',
+    company:'SAUCE.VC',
+    img: '/assets/members/ZOEB ALI KHAN.png',
+  },
 };
 
 const agenda: Record<string, { date: string; sessions: Session[] }> = {
@@ -681,6 +687,7 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
           speakerPhotos['Abhiram Bhalerao'],
           speakerPhotos['Saptarishi Sen'],
           speakerPhotos['Ashim Jolly'],
+          speakerPhotos['ZOEB ALI KHAN']
         ],
       },
     ],
