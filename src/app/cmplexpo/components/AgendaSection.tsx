@@ -557,14 +557,14 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
   'DAY 2': {
     date: 'Tuesday, 05 May 2026',
     sessions: [
-      {
-        time: '11:00 AM - 12:00 AM',
-        type: 'event',
-        title: 'Global Envoys Preview: A Curated Walkthrough',
-        description:
-          'An invitation-only walkthrough of CMPL Expo 2026, curated exclusively for diplomatic missions and investment bodies to explore bilateral trade, cross-border investment, and collaboration opportunities.',
-        highlight: true,
-      },
+      // {
+      //   time: '11:00 AM - 12:00 AM',
+      //   type: 'event',
+      //   title: 'Global Envoys Preview: A Curated Walkthrough',
+      //   description:
+      //     'An invitation-only walkthrough of CMPL Expo 2026, curated exclusively for diplomatic missions and investment bodies to explore bilateral trade, cross-border investment, and collaboration opportunities.',
+      //   highlight: true,
+      // },
       {
         time: '11:00 AM – 12:00 PM',
         type: 'event',
