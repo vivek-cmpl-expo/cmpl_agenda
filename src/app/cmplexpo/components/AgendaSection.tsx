@@ -20,6 +20,7 @@ type Session = {
   speakerDetails?: SpeakerInfo[];
   highlight?: boolean;
   banner?: { desktop: string; mobile: string };
+  hideTypeLabel?: boolean;
 };
 
 const speakerPhotos: Record<string, SpeakerInfo> = {
@@ -536,7 +537,8 @@ const agenda: Record<string, { date: string; sessions: Session[] }> = {
       {
         time: '4:30 PM – 6:30 PM',
         type: 'event',
-        track: 'By Invite Only',
+        track: 'Speaq conference area (only by invite)',
+        hideTypeLabel: true,
         title: 'An Exclusive Food Founders Meetup - Mumbai',
         description:
           "Exclusively for F&B founders happening in collaboration with Equinox Lab. An exclusive gathering for F&B founders to connect, share insights, and build meaningful partnerships. Curated conversations in a relaxed setting - no pitches, just real talk between people building India's food future.",
@@ -955,16 +957,18 @@ export default function AgendaSection() {
                               {session.track}
                             </span>
                           )}
-                          <span
-                            className="text-[9px] font-bold tracking-[0.2em] uppercase px-2 py-0.5 rounded"
-                            style={{
-                              background: badgeColorBg,
-                              color: badgeColor,
-                              border: `1px solid ${badgeColorBorder}`,
-                            }}
-                          >
-                            {typeLabels[session.type]}
-                          </span>
+                          {!session.hideTypeLabel && (
+                            <span
+                              className="text-[9px] font-bold tracking-[0.2em] uppercase px-2 py-0.5 rounded"
+                              style={{
+                                background: badgeColorBg,
+                                color: badgeColor,
+                                border: `1px solid ${badgeColorBorder}`,
+                              }}
+                            >
+                              {typeLabels[session.type]}
+                            </span>
+                          )}
                         </div>
                       );
                     })()}
