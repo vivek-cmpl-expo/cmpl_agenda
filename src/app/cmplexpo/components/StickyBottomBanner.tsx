@@ -14,7 +14,7 @@ export default function StickyBottomBanner() {
       }}
     >
       <p className="text-white text-base sm:text-xl md:text-2xl font-bold tracking-wider uppercase text-center drop-shadow">
-        CMPL Expo Timings: 10:00 AM - 6:00 PM on all showdays
+        We’re curating an exciting line-up of industry sessions, networking opportunities, and business meetings for CMPL Delhi 2026 — the detailed agenda will be announced soon!
       </p>
     </div>
   );
